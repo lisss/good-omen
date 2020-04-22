@@ -32,4 +32,4 @@ yarn scrape:rozetka
 ```
 
 It will store the data in `./apify_storage/datasets/default` directory
-Refer the [source code](./index.ts) for implementation and configuration
+Refer the [source code](./src) for implementation and configuration

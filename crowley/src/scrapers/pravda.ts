@@ -3,7 +3,7 @@ import { pravdaComUaHandle } from '../../src/handles/pravda';
 import { failedRequestHandler } from './common';
 
 const baseUrl = 'https://www.pravda.com.ua/news';
-const pseudoUrls = [new Apify.PseudoUrl(`${baseUrl}/[.*]`)];
+const pseudoUrls = [new Apify.PseudoUrl(`${baseUrl}/[2019|2020]/[.*]`)];
 
 Apify.main(async () => {
     const { log } = Apify.utils;
@@ -16,8 +16,9 @@ Apify.main(async () => {
         requestQueue,
         handlePageFunction: async ({ page }) => {
             try {
-                const { date, title, content, tags } = await pravdaComUaHandle(page);
+                const { url, date, title, content, tags } = await pravdaComUaHandle(page);
                 await Apify.pushData({
+                    url,
                     date,
                     title,
                     content,
@@ -31,8 +32,8 @@ Apify.main(async () => {
         },
         handleFailedRequestFunction: failedRequestHandler,
         maxRequestRetries: 2,
-        maxRequestsPerCrawl: 10,
-        maxConcurrency: 10,
+        maxRequestsPerCrawl: 30000,
+        maxConcurrency: 50,
     });
 
     await crawler.run();

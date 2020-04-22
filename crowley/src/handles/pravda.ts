@@ -3,6 +3,7 @@ import { utils } from 'apify';
 import { Article } from '../../types';
 
 export const pravdaComUaHandle = async (page: Page): Promise<Article> => {
+    const url = await page.url();
     const title = await page.$eval(`[class='post_news__title']`, (e) => e.textContent);
     const date = await page.$eval(`[class='post_news__date']`, (e) => e.textContent);
     const content = utils.htmlToText(
@@ -16,6 +17,7 @@ export const pravdaComUaHandle = async (page: Page): Promise<Article> => {
     );
 
     return {
+        url,
         title,
         date,
         content,

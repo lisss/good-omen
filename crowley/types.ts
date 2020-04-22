@@ -1,7 +1,8 @@
 export interface Article {
+    url: string;
     title: string | null;
     date: string | null;
-    content: string | null;
+    content: string;
     tags?: (string | null)[];
 }
 
