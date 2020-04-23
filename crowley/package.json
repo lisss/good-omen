@@ -9,7 +9,8 @@
     "scripts": {
         "scrape:pravda": "APIFY_LOCAL_STORAGE_DIR=pravda_storage APIFY_HEADLESS=1 ts-node src/scrapers/pravda.ts",
         "scrape:rozetka": "APIFY_LOCAL_STORAGE_DIR=rozetka_storage APIFY_HEADLESS=1 ts-node src/scrapers/rozetka.ts",
-        "scrape:korrespondent": "APIFY_LOCAL_STORAGE_DIR=korr_storage APIFY_HEADLESS=1 ts-node src/scrapers/korrespondent.ts"
+        "scrape:korrespondent": "APIFY_LOCAL_STORAGE_DIR=korr_storage APIFY_HEADLESS=1 ts-node src/scrapers/korrespondent.ts",
+        "scrape:liga": "APIFY_LOCAL_STORAGE_DIR=liga_storage APIFY_HEADLESS=1 ts-node src/scrapers/liga.ts"
     },
     "engines": {
         "node": "^10.17.0 || ^12.3.0"
