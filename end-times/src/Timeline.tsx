@@ -46,6 +46,10 @@ const data: TimelineElementProps[] = [
         date: '06.04.2020',
         title: 'title 3',
     },
+    {
+        date: '06.05.2020',
+        title: 'title 4',
+    },
 ];
 
 export const TimeLine = () => (
