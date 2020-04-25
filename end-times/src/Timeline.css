@@ -1,0 +1,10 @@
+.timeline-head {
+}
+
+.timeline-head:hover {
+    cursor: pointer;
+}
+
+.timeline-details {
+    margin: 16px 0 12px;
+}
