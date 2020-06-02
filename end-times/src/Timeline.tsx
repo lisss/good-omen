@@ -1,16 +1,17 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import 'rc-tooltip/assets/bootstrap.css';
+import './Timeline.css';
 import React, { useState } from 'react';
 import Tooltip from 'rc-tooltip';
 
 interface TimelineElementProps {
+    url: string;
     date: string;
     title: string;
-    details?: string;
 }
 
-const TimelineElement = ({ date, title, details }: TimelineElementProps) => {
+const TimelineElement = ({ url, date, title }: TimelineElementProps) => {
     const [expanded, setExpanded] = useState(false);
 
     const toggleExpanded = () => setExpanded(!expanded);
@@ -22,10 +23,14 @@ const TimelineElement = ({ date, title, details }: TimelineElementProps) => {
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 // icon={<WorkIcon />}
             >
-                <Tooltip overlay={details} placement="bottom">
-                    <h3 className="vertical-timeline-element-title">{title}</h3>
-                </Tooltip>
-                {expanded && <p>{details}</p>}
+                <h3 className="vertical-timeline-element-title timeline-head">{title}</h3>
+                {expanded && (
+                    <div className="timeline-details">
+                        <a href={url} target="_blank">
+                            читати
+                        </a>
+                    </div>
+                )}
             </VerticalTimelineElement>
         </div>
     );
@@ -33,18 +38,28 @@ const TimelineElement = ({ date, title, details }: TimelineElementProps) => {
 
 const data: TimelineElementProps[] = [
     {
-        date: '03.03.2020',
-        title: 'title 1',
-        details: 'details 1',
+        url:
+            'https://ua.korrespondent.net/ukraine/4220520-opublikovanyi-film-rik-prezydenta-zelenskoho',
+        date: '4/22/2020',
+        title: 'Опублікований фільм Рік президента Зеленського',
     },
     {
-        date: '02.04.2020',
-        title: 'title 2',
-        details: 'details 2',
+        url:
+            'https://ua.korrespondent.net/ukraine/politics/4220436-zelenskyi-proviv-zustrich-z-saakashvili',
+        date: '4/22/2020',
+        title: 'Зеленський провів зустріч з Саакашвілі',
     },
     {
-        date: '06.04.2020',
-        title: 'title 3',
+        url:
+            'https://ua.korrespondent.net/business/financial/4219227-zelenskyi-skhvalyv-zminy-do-buidzhetu-cherez-COVID',
+        date: '18/04/2020',
+        title: 'Зеленський схвалив зміни до бюджету через COVID',
+    },
+    {
+        url:
+            'https://ua.korrespondent.net/ukraine/4201080-zelenskyi-proviv-perestanovky-v-natsradi-z-tb-i-radio',
+        date: '5/03/2020',
+        title: 'Зеленський провів перестановки в Нацраді з ТБ і радіо',
     },
     {
         date: '06.05.2020',
@@ -54,8 +69,8 @@ const data: TimelineElementProps[] = [
 
 export const TimeLine = () => (
     <VerticalTimeline layout={'2-columns'}>
-        {data.map(({ date, title, details }) => (
-            <TimelineElement {...{ date, title, details }} key={date} />
+        {data.map(({ url, date, title }) => (
+            <TimelineElement {...{ url, date, title }} key={date} />
         ))}
     </VerticalTimeline>
 );

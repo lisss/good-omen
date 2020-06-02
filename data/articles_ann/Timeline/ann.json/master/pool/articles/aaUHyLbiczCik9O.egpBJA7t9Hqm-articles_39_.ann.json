@@ -1,0 +1,86 @@
+{
+    "annotatable": {
+        "parts": [
+            "s1p1",
+            "s1p2",
+            "s1p3",
+            "s1p4",
+            "s1p5",
+            "s1p6",
+            "s1p7",
+            "s1p8",
+            "s1p9",
+            "s1p10",
+            "s1p11"
+        ]
+    },
+    "anncomplete": true,
+    "sources": [],
+    "metas": {},
+    "entities": [
+        {
+            "classId": "e_7",
+            "part": "s1p1",
+            "offsets": [{ "start": 0, "text": "Велика Британія" }],
+            "coordinates": [],
+            "confidence": { "state": "pre-added", "who": ["user:Liss"], "prob": 1 },
+            "fields": {},
+            "normalizations": {}
+        },
+        {
+            "classId": "e_1",
+            "part": "s1p1",
+            "offsets": [{ "start": 16, "text": "досягла піку" }],
+            "coordinates": [],
+            "confidence": { "state": "pre-added", "who": ["user:Liss"], "prob": 1 },
+            "fields": {},
+            "normalizations": {}
+        },
+        {
+            "classId": "e_2",
+            "part": "s1p1",
+            "offsets": [{ "start": 29, "text": "коронавірусу" }],
+            "coordinates": [],
+            "confidence": { "state": "pre-added", "who": ["user:Liss"], "prob": 1 },
+            "fields": {},
+            "normalizations": {}
+        },
+        {
+            "classId": "e_7",
+            "part": "s1p3",
+            "offsets": [{ "start": 2, "text": "Великій Британії" }],
+            "coordinates": [],
+            "confidence": { "state": "pre-added", "who": ["user:Liss"], "prob": 1 },
+            "fields": {},
+            "normalizations": {}
+        },
+        {
+            "classId": "e_2",
+            "part": "s1p3",
+            "offsets": [{ "start": 19, "text": "глава МОЗ Метт Хенкок" }],
+            "coordinates": [],
+            "confidence": { "state": "pre-added", "who": ["user:Liss"], "prob": 1 },
+            "fields": {},
+            "normalizations": {}
+        },
+        {
+            "classId": "e_1",
+            "part": "s1p3",
+            "offsets": [{ "start": 41, "text": "оголосив про пік" }],
+            "coordinates": [],
+            "confidence": { "state": "pre-added", "who": ["user:Liss"], "prob": 1 },
+            "fields": {},
+            "normalizations": {}
+        },
+        {
+            "classId": "e_2",
+            "part": "s1p3",
+            "offsets": [{ "start": 58, "text": "коронавірусу" }],
+            "coordinates": [],
+            "confidence": { "state": "pre-added", "who": ["ml:regex"], "prob": 0 },
+            "fields": {},
+            "normalizations": {}
+        }
+    ],
+    "relations": []
+}
