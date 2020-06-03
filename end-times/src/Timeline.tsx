@@ -4,29 +4,30 @@ import 'rc-tooltip/assets/bootstrap.css';
 import './Timeline.css';
 import React, { useState } from 'react';
 import { NewsResult } from './resl';
-// import Tooltip from 'rc-tooltip';
+import Tooltip from 'rc-tooltip';
 
-const TimelineElement = ({ link, date, title }: NewsResult) => {
+const TimelineElement = ({ link, date, title, thumbnail }: NewsResult) => {
     const [expanded, setExpanded] = useState(false);
 
     const toggleExpanded = () => setExpanded(!expanded);
 
     return (
         <div onClick={toggleExpanded} className="vertical-timeline-element">
-            <VerticalTimelineElement
-                date={date}
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                // icon={<WorkIcon />}
-            >
-                <h3 className="vertical-timeline-element-title timeline-head">{title}</h3>
-                {expanded && (
-                    <div className="timeline-details">
-                        <a href={link} target="_blank">
-                            читати
-                        </a>
-                    </div>
-                )}
-            </VerticalTimelineElement>
+            <Tooltip overlay="eee">
+                <VerticalTimelineElement
+                    date={date}
+                    iconStyle={{ backgroundImage: `url(${thumbnail})`, color: '#fff' }}
+                >
+                    <h3 className="vertical-timeline-element-title timeline-head">{title}</h3>
+                    {expanded && (
+                        <div className="timeline-details">
+                            <a href={link} target="_blank">
+                                читати
+                            </a>
+                        </div>
+                    )}
+                </VerticalTimelineElement>
+            </Tooltip>
         </div>
     );
 };

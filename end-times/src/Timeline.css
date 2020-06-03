@@ -8,3 +8,14 @@
 .timeline-details {
     margin: 16px 0 12px;
 }
+
+a {
+    color: rgb(33, 150, 243);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(247, 77, 77);
+    font-weight: 500;
+    font-size: 18px;
+}

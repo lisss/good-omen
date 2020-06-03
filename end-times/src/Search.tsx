@@ -40,6 +40,7 @@ const data: NewsResult[] = [
 const processArticle = (
     data: NewsResult[],
     textClass: string,
+    onSearchStart: () => void,
     onComplete: (timeline: NewsResult[]) => void,
     onError: () => void
 ) => {
@@ -47,6 +48,7 @@ const processArticle = (
         textClass,
         url: d.link,
     }));
+    onSearchStart();
     fetch('https://localhost:4443/', {
         method: 'POST',
         body: JSON.stringify({
@@ -72,9 +74,11 @@ const processArticle = (
 };
 
 export const Search = ({
+    onSearchStart,
     onSearchComplete,
     onSearchError,
 }: {
+    onSearchStart: () => void;
     onSearchComplete: (data: NewsResult[]) => void;
     onSearchError: () => void;
 }) => {
@@ -83,14 +87,20 @@ export const Search = ({
         'https://ua.korrespondent.net/ukraine/4236648-kupuuit-i-zaliakuuit-zelenskyi-poiasnyv-pryznachennia-hubernatora-zakarpattia';
 
     const onSearch = () => {
-        processArticle(data, 'post-item__text', onSearchComplete, onSearchError);
+        processArticle(data, 'post-item__text', onSearchStart, onSearchComplete, onSearchError);
     };
 
     return (
-        <>
-            <input onChange={(e) => setSearchTerm(e.currentTarget.value)} />
+        <div className="search-block">
+            <input
+                className="search-input"
+                placeholder="Введіть, шо вам там треба..."
+                onChange={(e) => setSearchTerm(e.currentTarget.value)}
+            />
             {/* <button onClick={() => search(searhTerm)}>Search</button> */}
-            <button onClick={onSearch}>Search</button>
-        </>
+            <button className="search-btn" onClick={onSearch}>
+                Вйо до пошуку!
+            </button>
+        </div>
     );
 };
