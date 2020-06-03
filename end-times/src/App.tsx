@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import { TimeLine } from './Timeline';
-import { search } from './search';
+import { Search } from './Search';
+import { NewsResult } from './resl';
 
 function App() {
+    const [timelinedata, setTimeLineData] = useState<NewsResult[] | null>(null);
     return (
         <>
-            <button onClick={search}>click me</button>
-            <TimeLine />
+            <Search
+                onSearchComplete={setTimeLineData}
+                onSearchError={() => setTimeLineData(null)}
+            />
+            <TimeLine data={timelinedata} />
         </>
     );
 }

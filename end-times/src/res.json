@@ -1,0 +1,278 @@
+{
+    "request_info": {
+        "success": true,
+        "credits_used": 6,
+        "credits_remaining": 94
+    },
+    "search_metadata": {
+        "created_at": "2020-06-03T14:44:59.650Z",
+        "processed_at": "2020-06-03T14:45:06.887Z",
+        "total_time_taken": 7.24,
+        "engine_url": "https://www.google.com.ua/search?q=зеленський&gl=ua&hl=uk&tbm=nws&num=20&tbs=sbd:1,qdr:m&sourceid=chrome&ie=UTF-8",
+        "html_url": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=зеленський&google_domain=google.com.ua&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_month&page=1&num=20&output=html&engine=google",
+        "json_url": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=зеленський&google_domain=google.com.ua&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_month&page=1&num=20&output=json&engine=google",
+        "timing": [
+            "global_init - 0ms (total 0ms)",
+            "auth_apikey - 69ms (total 69ms)",
+            "auth_retrieve_plan - 49ms (total 119ms)",
+            "auth_retrieve_credit_usage - 125ms (total 245ms)",
+            "processing_invoking_worker - 1ms (total 247ms)",
+            "processing_execution_complete - 7237ms (total 7484ms)",
+            "auth_credit_usage_reconcile - 139ms (total 7624ms)",
+            "global_end - 0ms (total 7624ms)"
+        ]
+    },
+    "search_parameters": {
+        "q": "зеленський",
+        "google_domain": "google.com.ua",
+        "gl": "ua",
+        "hl": "uk",
+        "search_type": "news",
+        "sort_by": "date",
+        "time_period": "last_month",
+        "page": "1",
+        "num": "20",
+        "output": "json",
+        "engine": "google"
+    },
+    "search_information": {
+        "original_query_yields_zero_results": false,
+        "total_results": 139,
+        "time_taken_displayed": 0.15,
+        "query_displayed": "зеленський",
+        "detected_location": "Україна"
+    },
+    "pagination": {
+        "current": 1,
+        "next": "https://www.google.com.ua/search?q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&num=20&gl=ua&hl=uk&tbs=sbd:1,qdr:m&tbm=nws&ei=cLfXXtKsFIfr-gSKhJeQAg&start=20&sa=N&ved=0ahUKEwjSpLeW8eXpAhWHtZ4KHQrCBSIQ8NMDCJEB",
+        "other_pages": {
+            "2": "https://www.google.com.ua/search?q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&num=20&gl=ua&hl=uk&tbs=sbd:1,qdr:m&tbm=nws&ei=cLfXXtKsFIfr-gSKhJeQAg&start=20&sa=N&ved=0ahUKEwjSpLeW8eXpAhWHtZ4KHQrCBSIQ8tMDCH8",
+            "3": "https://www.google.com.ua/search?q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&num=20&gl=ua&hl=uk&tbs=sbd:1,qdr:m&tbm=nws&ei=cLfXXtKsFIfr-gSKhJeQAg&start=40&sa=N&ved=0ahUKEwjSpLeW8eXpAhWHtZ4KHQrCBSIQ8tMDCIEB",
+            "4": "https://www.google.com.ua/search?q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&num=20&gl=ua&hl=uk&tbs=sbd:1,qdr:m&tbm=nws&ei=cLfXXtKsFIfr-gSKhJeQAg&start=60&sa=N&ved=0ahUKEwjSpLeW8eXpAhWHtZ4KHQrCBSIQ8tMDCIMB",
+            "5": "https://www.google.com.ua/search?q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&num=20&gl=ua&hl=uk&tbs=sbd:1,qdr:m&tbm=nws&ei=cLfXXtKsFIfr-gSKhJeQAg&start=80&sa=N&ved=0ahUKEwjSpLeW8eXpAhWHtZ4KHQrCBSIQ8tMDCIUB",
+            "6": "https://www.google.com.ua/search?q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&num=20&gl=ua&hl=uk&tbs=sbd:1,qdr:m&tbm=nws&ei=cLfXXtKsFIfr-gSKhJeQAg&start=100&sa=N&ved=0ahUKEwjSpLeW8eXpAhWHtZ4KHQrCBSIQ8tMDCIcB",
+            "7": "https://www.google.com.ua/search?q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&num=20&gl=ua&hl=uk&tbs=sbd:1,qdr:m&tbm=nws&ei=cLfXXtKsFIfr-gSKhJeQAg&start=120&sa=N&ved=0ahUKEwjSpLeW8eXpAhWHtZ4KHQrCBSIQ8tMDCIkB",
+            "8": "https://www.google.com.ua/search?q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&num=20&gl=ua&hl=uk&tbs=sbd:1,qdr:m&tbm=nws&ei=cLfXXtKsFIfr-gSKhJeQAg&start=140&sa=N&ved=0ahUKEwjSpLeW8eXpAhWHtZ4KHQrCBSIQ8tMDCIsB",
+            "9": "https://www.google.com.ua/search?q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&num=20&gl=ua&hl=uk&tbs=sbd:1,qdr:m&tbm=nws&ei=cLfXXtKsFIfr-gSKhJeQAg&start=160&sa=N&ved=0ahUKEwjSpLeW8eXpAhWHtZ4KHQrCBSIQ8tMDCI0B",
+            "10": "https://www.google.com.ua/search?q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&num=20&gl=ua&hl=uk&tbs=sbd:1,qdr:m&tbm=nws&ei=cLfXXtKsFIfr-gSKhJeQAg&start=180&sa=N&ved=0ahUKEwjSpLeW8eXpAhWHtZ4KHQrCBSIQ8tMDCI8B",
+            "Уперед": "https://www.google.com.ua/search?q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&num=20&gl=ua&hl=uk&tbs=sbd:1,qdr:m&tbm=nws&ei=cLfXXtKsFIfr-gSKhJeQAg&start=20&sa=N&ved=0ahUKEwjSpLeW8eXpAhWHtZ4KHQrCBSIQ8NMDCJEB"
+        },
+        "api_pagination": {
+            "next": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&google_domain=google.com.ua&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_month&output=json&engine=google&page=2&num=20",
+            "other_pages": {
+                "2": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&google_domain=google.com.ua&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_month&output=json&engine=google&page=2&num=20",
+                "3": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&google_domain=google.com.ua&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_month&output=json&engine=google&page=3&num=20",
+                "4": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&google_domain=google.com.ua&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_month&output=json&engine=google&page=4&num=20",
+                "5": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&google_domain=google.com.ua&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_month&output=json&engine=google&page=5&num=20",
+                "6": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&google_domain=google.com.ua&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_month&output=json&engine=google&page=6&num=20",
+                "7": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&google_domain=google.com.ua&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_month&output=json&engine=google&page=7&num=20",
+                "8": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&google_domain=google.com.ua&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_month&output=json&engine=google&page=8&num=20",
+                "9": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&google_domain=google.com.ua&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_month&output=json&engine=google&page=9&num=20",
+                "10": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&google_domain=google.com.ua&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_month&output=json&engine=google&page=10&num=20",
+                "Уперед": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&google_domain=google.com.ua&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_month&output=json&engine=google&page=2&num=20"
+            }
+        }
+    },
+    "news_results": [
+        {
+            "position": 1,
+            "title": "Купують і залякують: Зеленський пояснив призначення ...",
+            "link": "https://ua.korrespondent.net/ukraine/4236648-kupuuit-i-zaliakuuit-zelenskyi-poiasnyv-pryznachennia-hubernatora-zakarpattia",
+            "domain": "ua.korrespondent.net",
+            "source": "Корреспондент.net",
+            "date": "6 хв. тому",
+            "snippet": "Президент Володимир Зеленський пояснив призначення на пост глави ... За словами Зеленського, Петров був призначений на указану посаду через те, ...",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8x90m1434vu9hk03keqkefdt5Vsodr4wLC9BgWyba_VB9DISOJAOxsqIF1H1Oz407NxwGpnnB&s"
+        },
+        {
+            "position": 2,
+            "title": "Зеленський розповів про ринок землі \"для всіх\"",
+            "link": "https://ua.korrespondent.net/ukraine/politics/4236645-zelenskyi-rozpoviv-pro-rynok-zemli-dlia-vsikh",
+            "domain": "ua.korrespondent.net",
+            "source": "Корреспондент.net",
+            "date": "8 хв. тому",
+            "snippet": "Президент Володимир Зеленський під час візиту в Хмельницьку область в середу, 3 червня, виступив за збереження довгострокової оренди землі ...",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbmagl-O5XjHe4iXRJBrnMsJYW8YZJ6cERa0nISQACpiZIm6ZxGv_mQRuNbYrDKGTvMynQV7vD&s"
+        },
+        {
+            "position": 3,
+            "title": "Зеленський хоче додати студентські гуртожитки у проєкт ...",
+            "link": "https://www.ukrinform.ua/rubric-society/3038753-zelenskij-hoce-dodati-studentski-gurtozitki-u-proekt-velike-budivnictvo.html",
+            "domain": "www.ukrinform.ua",
+            "source": "Укрінформ. Новини України та світу",
+            "date": "11 хв. тому",
+            "snippet": "Президент Володимир Зеленський пропонує включити до проєкту \"Велике будівництво\" спорудження гуртожитків для студентів. Про це він заявив під час ...",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdfrFBuLhGbQ98YxQSwYiXAMlAF4IP-RmybkbsCk6cS10O5mpgFCI8Jw9Ve8y4W_UA0n-O-eQ&s"
+        },
+        {
+            "position": 4,
+            "title": "Зеленський про боротьбу з контрабандою: Якщо треба ...",
+            "link": "https://ua.interfax.com.ua/news/political/666675.html",
+            "domain": "ua.interfax.com.ua",
+            "source": "Інтерфакс-Україна",
+            "date": "15 хв. тому",
+            "snippet": "Зеленський про боротьбу з контрабандою: Якщо треба буде побути без кави, лосося або хамону - переживемо, але пропускати за $500 на митниці не ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/d011e5c017e395d326c12671abad2890ccb72a44.jpg"
+        },
+        {
+            "position": 5,
+            "title": "Зеленський пішов у дитячий садок на Хмельниччині (фото)",
+            "link": "https://glavcom.ua/news/zelenskiy-pishov-u-dityachiy-sadok-na-hmelnichchini-foto-684691.html",
+            "domain": "glavcom.ua",
+            "source": "ГЛАВКОМ",
+            "date": "17 хв. тому",
+            "snippet": "Зеленський ознайомився із ходом його будівництва у селі Давидківці. За словами директора ДП «Хмельницька обласна служба єдиного замовника» ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/62685e5d481e482984accf516097e37d2e3a6e8e.jpg"
+        },
+        {
+            "position": 6,
+            "title": "На «президентської дачі». Зеленський на Трійцю буде ...",
+            "link": "https://nv.ua/ukr/ukraine/politics/prezident-zelenskiy-vidznachit-triycyu-na-ostrovi-biryuchiy-novini-ukrajini-50092075.html",
+            "domain": "nv.ua",
+            "source": "НВ",
+            "date": "20 хв. тому",
+            "snippet": "Повідомляється, що там вже готують до візиту Зеленського «президентську дачу» і вертолітний майданчик. «Президентська дача» на острові Бірючому з' ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/25bdbc41640cc30ade95fc7e6dc2835ff04c8afd.jpg"
+        },
+        {
+            "position": 7,
+            "title": "Місцеві контрабандисти \"обходять стороною\": Зеленський ...",
+            "link": "https://espreso.tv/news/2020/06/03/miscevi_kontrabandysty_quotobkhodyat_storonoyuquot_zelenskyy_pro_pryznachennya_oficera_sbu_golovoyu_zakarpattya",
+            "domain": "espreso.tv",
+            "source": "espreso.tv",
+            "date": "28 хв. тому",
+            "snippet": "Espreso.tvСуспільствоМісцеві контрабандисти \"обходять стороною\": Зеленський про призначення офіцера СБУ головою Закарпаття ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/cec77cc4519dbfcf51cccaac0132fd37e5798f0b.jpg"
+        },
+        {
+            "position": 8,
+            "title": "Зеленський анонсував презентацію регіональних ...",
+            "link": "https://ua.interfax.com.ua/news/economic/666670.html",
+            "domain": "ua.interfax.com.ua",
+            "source": "Інтерфакс-Україна",
+            "date": "28 хв. тому",
+            "snippet": "Президент України Володимир Зеленський у четвер, 4 червня, проведе зустріч з представниками туристичного бізнесу для обговорення розвитку ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/2bf30ce3e9e754da8f5ead635e410bc3952348e5.jpg"
+        },
+        {
+            "position": 9,
+            "title": "Зеленський хоче додати спорудження гуртожитків у ...",
+            "link": "https://ua.112.ua/suspilstvo/zelenskyi-khoche-dodaty-sporudzhennia-hurtozhytkiv-u-prohramu-velyke-budivnytstvo-538259.html",
+            "domain": "ua.112.ua",
+            "source": "Інформаційне Агентство 112.ua (Блог)",
+            "date": "29 хв. тому",
+            "snippet": "Президент України Володимир Зеленський буде говорити з Міністерством інфраструктури, Прем'єром і Мінрегіоном про те, щоб у програму \"Велике ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/62685e5d481e482984accf516097e37d2e3a6e8e.jpg"
+        },
+        {
+            "position": 10,
+            "title": "Зеленський закликав голову правління Укрексімбанку ...",
+            "link": "https://ua.interfax.com.ua/news/economic/666667.html",
+            "domain": "ua.interfax.com.ua",
+            "source": "Інтерфакс-Україна",
+            "date": "35 хв. тому",
+            "snippet": "Президент України Володимир Зеленський закликав голову правління державного Укрексімбанку (Київ) Євгена Мецгера вирішити проблему з ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/cf9c7f5b72fc8f11cf5c052444472c91bfef7662.png"
+        },
+        {
+            "position": 11,
+            "title": "“Переживемо без кави та хамона”: Зеленський ...",
+            "link": "https://pershij.com.ua/perezhyvemo-bez-kavy-ta-khamona-zelenskyi-prokomentuvav-intsydent-na-kpp-tysa-video/",
+            "domain": "pershij.com.ua",
+            "source": "Регион, тв (прес-реліз)",
+            "date": "38 хв. тому",
+            "snippet": "Зеленський відреaгувaв нa конфлікт нa кордоні з Угорщиною, в результaті якого зaблокувaли КПП “Тисa”. Про це нa зустрічі з бізнесом в Хмельницькій ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/896fef9d7058c60a246fbd2c4539a2a14641e9c0.jpg"
+        },
+        {
+            "position": 12,
+            "title": "﻿Зеленський заявив, що проєкт \"Велике будівництво\" можуть ...",
+            "link": "https://gordonua.com/ukr/news/society/-zelenskij-zajaviv-shcho-proekt-velike-budivnitstvo-mozhut-dopovniti-zvedennjam-gurtozhitkiv-dlja-studentiv-1502708.html",
+            "domain": "gordonua.com",
+            "source": "ГОРДОН",
+            "date": "39 хв. тому",
+            "snippet": "Президент України Володимир Зеленський підкреслив, що українська влада має намір побудувати максимальну кількість шкіл, дитячих садочків та ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/62685e5d481e482984accf516097e37d2e3a6e8e.jpg"
+        },
+        {
+            "position": 13,
+            "title": "Зеленський запропонував включити до проекту \"Велике ...",
+            "link": "https://nash.live/news/society/zelenskijzaproponuvavvkljuchiti-doproektuvelike-budivnitstvo-hurtozhitki-dlja-studentiv.html",
+            "domain": "nash.live",
+            "source": "nash.live (прес-реліз) (Блог)",
+            "date": "41 хв. тому",
+            "snippet": "Також під час зустрічі з ректорами провідних вищих навчальних закладів 2 червня Зеленському розповіли про одну з великих проблем вищої освіти – ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/62685e5d481e482984accf516097e37d2e3a6e8e.jpg"
+        },
+        {
+            "position": 14,
+            "title": "Зеленський виявив готовність захищати договори тривалої ...",
+            "link": "https://ua.interfax.com.ua/news/economic/666663.html",
+            "domain": "ua.interfax.com.ua",
+            "source": "Інтерфакс-Україна",
+            "date": "48 хв. тому",
+            "snippet": "При цьому Зеленський закликав бізнес повідомляти місцевій владі про наявність будь-яких проблем. Як повідомлялося, Верховна Рада 31 березня 2020 ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/32c6b5257f6c9d3dbe5cd0270d5f4ac5b53b8139.jpg"
+        },
+        {
+            "position": 15,
+            "title": "В четвер Володимир Зеленський відвідає Кам'янець ...",
+            "link": "https://newskm.net/news/v-chetverh-volodymyr-zelenskyj-vidvidaie-kam-ianets-podilskyj/",
+            "domain": "newskm.net",
+            "source": "http://newskm.net/ (прес-реліз) (Блог)",
+            "date": "49 хв. тому",
+            "snippet": "Президент України Володимир Зеленський 3-4 червня перебуватиме з робочою поїздкою на Хмельниччині. Сьогодні, 3 червня, Володимир Зеленський ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/62685e5d481e482984accf516097e37d2e3a6e8e.jpg"
+        },
+        {
+            "position": 16,
+            "title": "\"Не знаю, чи можливо її прибрати повністю\": Зеленський ...",
+            "link": "https://nash.live/news/politics/ne-znaju-chi-mozhlivo-jiji-pribrati-povnistju-zelenskij-pro-kontrabandu-v-ukrajini.html",
+            "domain": "nash.live",
+            "source": "nash.live (прес-реліз) (Блог)",
+            "date": "49 хв. тому",
+            "snippet": "Про це Зеленський говорив під час зустрічі з представниками бізнесу в Хмельницькій області, трансляцію вів телеканал НАШ. \"Ви можете це побороти ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/39640f028bc2bc0d2d2e5091e02b02a154a7c0d8.jpg"
+        },
+        {
+            "position": 17,
+            "title": "Зеленський анонсував презентацію низки проектів у ...",
+            "link": "https://www.unn.com.ua/uk/news/1872960-zelenskiy-anonsuvav-prezentatsiyu-nizki-proektiv-u-regionakh-yaki-dopomozhut-privabiti-turistiv",
+            "domain": "www.unn.com.ua",
+            "source": "УНН",
+            "date": "52 хв. тому",
+            "snippet": "Це одне з головних питань”, — сказав Зеленський. За його словами, невдовзі буде презентовано низку проектів, зокрема в галузі туризму, які можуть бути ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/2bf30ce3e9e754da8f5ead635e410bc3952348e5.jpg"
+        },
+        {
+            "position": 18,
+            "title": "Зеленський не виключає у майбутньому дозволу на продаж ...",
+            "link": "https://www.ukrinform.ua/rubric-economy/3038776-zelenskij-ne-viklucae-u-majbutnomu-dozvolu-na-prodaz-zemli-inozemcam.html",
+            "domain": "www.ukrinform.ua",
+            "source": "Укрінформ. Новини України та світу",
+            "date": "52 хв. тому",
+            "snippet": "Президент Володимир Зеленський не виключає, що після того, як українці отримають можливість брати доступні кредити для купівлі землі, земельний ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/60225773cacbd50d8029de578413733f3a77e51e.jpg"
+        },
+        {
+            "position": 19,
+            "title": "Зеленський підтвердив, що в Кабміні з'явиться віце-прем'єр ...",
+            "link": "https://espreso.tv/news/2020/06/03/zelenskyy_pidtverdyv_scho_v_kabmini_zyavytsya_vice_premyer_z_opk_ta_promyslovoyi_polityky_i_nazvav_mozhlyvu_kandydaturu",
+            "domain": "espreso.tv",
+            "source": "espreso.tv",
+            "date": "52 хв. тому",
+            "snippet": "Зеленський також закликав пропонувати кандидатури на цю посаду, і коли було озвучено ім'я екс-заступника міністра промислової політики, народного ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/22fe2a3ab031fcb2c9414f3c60837ebe0d6dcb76.jpg"
+        },
+        {
+            "position": 20,
+            "title": "В Україні з'явиться ще один віцепрем'єр: Зеленський ...",
+            "link": "https://tsn.ua/politika/v-ukrayini-z-yavitsya-sche-odin-viceprem-yer-zelenskiy-nazvav-pershu-kandidaturu-na-posadu-1559346.html",
+            "domain": "tsn.ua",
+            "source": "ТСН - Телевізійна служба новин",
+            "date": "57 хв. тому",
+            "snippet": "За словами Зеленського, він на базі Ради національної безпеки України я дав доручення минулого тижня і вже підбираються кадри. Ми дали 10 днів. На ...",
+            "thumbnail": "https://api.serpwow.com/download/images/0306202014/22fe2a3ab031fcb2c9414f3c60837ebe0d6dcb76.jpg"
+        }
+    ]
+}
