@@ -3,7 +3,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import 'rc-tooltip/assets/bootstrap.css';
 import './Timeline.css';
 import React, { useState } from 'react';
-import Tooltip from 'rc-tooltip';
+// import Tooltip from 'rc-tooltip';
 
 interface TimelineElementProps {
     url: string;
@@ -60,10 +60,6 @@ const data: TimelineElementProps[] = [
             'https://ua.korrespondent.net/ukraine/4201080-zelenskyi-proviv-perestanovky-v-natsradi-z-tb-i-radio',
         date: '5/03/2020',
         title: 'Зеленський провів перестановки в Нацраді з ТБ і радіо',
-    },
-    {
-        date: '06.05.2020',
-        title: 'title 4',
     },
 ];
 
