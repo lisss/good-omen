@@ -1,5 +1,7 @@
 import os
 import json
+import re
+import csv
 from tokenize_uk import tokenize_uk
 
 
@@ -167,3 +169,97 @@ normalize_data(os.path.join(source_articles_path, 'pravda.com.ua.json'),
 
 normalize_data(os.path.join(source_articles_path, 'liga.json'),
                os.path.join(source_articles_path, 'liga_normalized.json'))
+
+
+''' Parse annotated data
+
+algorythm of parsing annotated data
+1) if all the article marked as IS_NO_EVENT and there are no other marks inside -
+mark every sentense as NO_EVENT
+2) if a block contains more than one sentence - split into multiple sentences
+by annotated split object (DATE annotation at the sentence beginning)
+'''
+
+
+def parse_annotated_articles(annotated_articles_path):
+    files = os.listdir(annotated_articles_path)
+    lines = []
+    raw_lines = []
+    for file in files:
+        with open(os.path.join(annotated_articles_path, file)) as f:
+            reader = csv.reader(f, dialect='excel-tab')
+            count = 0
+            miltiline_events_cache = []
+            is_all_non_event = None
+            all_non_events = []
+            start_mark = None
+
+            for i, row in enumerate(reader):
+                if row:
+                    first_column = row[0]
+                    next_column = row[1]
+
+                    if first_column != '===':
+
+                        if next_column == 'O':
+                            fst_col_split = first_column.split(' | ')
+
+                            # The line was required to be annotated annotation
+                            if len(fst_col_split) > 1:
+                                # The line was annotated, annotation is set on the next line
+                                if not fst_col_split[1]:
+                                    mark_row = reader.__next__()
+                                    is_event = mark_row[1] == 'IS_EVENT'
+                                    if not start_mark:
+                                        start_mark = mark_row[0]
+                                    if is_all_non_event is not None:
+                                        is_all_non_event = not is_event
+                                    line = (fst_col_split[0], is_event)
+                                    if not len(miltiline_events_cache):
+                                        lines.append(line)
+                                        if is_all_non_event:
+                                            all_non_events.append(line)
+                                    else:
+                                        miltiline_events_cache.append(line)
+                                        is_all_non_event = False
+                                # Not annotated
+                                else:
+                                    if is_all_non_event:
+                                        all_non_events.append(
+                                            (fst_col_split[0], False))
+                                    mark = re.findall(
+                                        'REL_\\d+', fst_col_split[1])
+                                    if mark:
+                                        start_mark = mark[0]
+                                if len(miltiline_events_cache):
+                                    # We already have some sentences in the cache
+                                    # Updating their status
+                                    ee = [miltiline_events_cache[i:i + 2]
+                                          for i in range(0, len(miltiline_events_cache), 2)]
+                                    for e in ee:
+                                        r = []
+                                        for x in e:
+                                            a, b = x
+                                            if a not in r:
+                                                r.append(a.strip())
+                                        t = ' '.join(r)
+                                        lines.append((t, is_event))
+                                    miltiline_events_cache = []
+                            else:
+                                event_text = fst_col_split[0].strip()
+                                # Append multi-event text if we already have something in the cache
+                                if event_text and len(miltiline_events_cache):
+                                    miltiline_events_cache.append(
+                                        (event_text, next_column))
+                                    is_all_non_event = False
+                        elif not (row[0].startswith('REL_') or row == 'END'):
+                            line = (row[0], next_column)
+                            miltiline_events_cache.append(line)
+                            is_all_non_event = False
+                    # We reached the end
+                    if first_column == start_mark:
+                        if is_all_non_event and next_column == 'IS_NOT_EVENT':
+                            lines += all_non_events
+                        all_non_events = []
+                count += 1
+    return lines
