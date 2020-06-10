@@ -1,38 +1,118 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.main {
+    margin: 16px 16px;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-block {
+    display: flex;
+    position: sticky;
+    top: 16px;
+    padding-bottom: 16px;
+    background-color: white;
+    z-index: 3;
+}
+
+@media screen and (max-width: 781px) {
+    .search-block {
+        flex-direction: column;
+    }
+}
+
+.search-input {
+    padding: 12px 14px;
+    margin-right: 8px;
+    flex: 1;
+    border: 1px solid rgba(33, 150, 243, 0.48);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 781px) {
+    .search-input {
+        margin: 0 0 12px;
+    }
+}
+
+.search-btn {
+    color: white;
+    background-color: rgb(33, 150, 243);
+    border-radius: 4px;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+}
+
+.empty {
+    /* margin: 16px; */
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    min-height: 781px;
+}
+
+.not-found {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.vertical-timeline-element-icon {
+    border-radius: 4px !important;
+}
+.vertical-timeline {
+    width: 100% !important;
+}
+.vertical-timeline-element-content {
+    border-radius: 0 !important;
+    box-shadow: 0 2px 0 rgba(33, 150, 243, 0.48) !important;
 }
