@@ -67,7 +67,7 @@
     padding: 12px 14px;
     margin-right: 8px;
     flex: 1;
-    border: 1px solid rgb(33, 150, 243);
+    border: 1px solid rgba(33, 150, 243, 0.48);
     border-radius: 4px;
     font-size: 16px;
 }
@@ -104,4 +104,15 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+}
+
+.vertical-timeline-element-icon {
+    border-radius: 4px !important;
+}
+.vertical-timeline {
+    width: 100% !important;
+}
+.vertical-timeline-element-content {
+    border-radius: 0 !important;
+    box-shadow: 0 2px 0 rgba(33, 150, 243, 0.48) !important;
 }

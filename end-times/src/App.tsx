@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-// import logo from './logo.svg';
+import Loader from 'react-loader-spinner';
 import './App.css';
 import { TimeLine } from './Timeline';
 import { Search } from './Search';
-import { NewsResult } from './resl';
-import Loader from 'react-loader-spinner';
-import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
+import { NewsResult } from './types';
 import { NotFound, Empty } from './Empty';
+
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
 function App() {
     const [loading, setLoading] = useState(false);

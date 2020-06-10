@@ -9,7 +9,7 @@ export interface NewsResult {
     thumbnail: string;
 }
 
-interface SearchResult {
+export interface SearchResult {
     request_info: {
         success: boolean;
         credits_used: number;

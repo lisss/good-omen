@@ -1,0 +1,1060 @@
+{
+    "request_info": {
+        "success": true,
+        "credits_used": 11,
+        "credits_remaining": 89
+    },
+    "search_metadata": {
+        "created_at": "2020-06-10T08:33:16.885Z",
+        "processed_at": "2020-06-10T08:33:32.215Z",
+        "total_time_taken": 15.33,
+        "engine_url": "https://www.google.com/search?q=шмигаль&gl=ua&hl=uk&tbm=nws&num=100&tbs=sbd:1,qdr:w&sourceid=chrome&ie=UTF-8",
+        "html_url": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=шмигаль&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_week&num=100&engine=google&output=html",
+        "json_url": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=шмигаль&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_week&num=100&engine=google&output=json",
+        "timing": [
+            "global_init - 0ms (total 0ms)",
+            "auth_apikey - 80ms (total 80ms)",
+            "auth_retrieve_plan - 64ms (total 144ms)",
+            "auth_retrieve_credit_usage - 110ms (total 254ms)",
+            "processing_invoking_worker - 1ms (total 256ms)",
+            "processing_execution_complete - 15330ms (total 15586ms)",
+            "auth_credit_usage_reconcile - 139ms (total 15725ms)",
+            "global_end - 0ms (total 15725ms)"
+        ]
+    },
+    "search_parameters": {
+        "q": "шмигаль",
+        "gl": "ua",
+        "hl": "uk",
+        "search_type": "news",
+        "sort_by": "date",
+        "time_period": "last_week",
+        "num": "100",
+        "engine": "google"
+    },
+    "search_information": {
+        "original_query_yields_zero_results": false,
+        "total_results": 11,
+        "time_taken_displayed": 0.18,
+        "query_displayed": "шмигаль",
+        "detected_location": "Україна"
+    },
+    "pagination": {
+        "current": 1,
+        "next": "https://www.google.com/search?q=%D1%88%D0%BC%D0%B8%D0%B3%D0%B0%D0%BB%D1%8C&num=100&gl=ua&hl=uk&tbs=sbd:1,qdr:w&tbm=nws&ei=1prgXqHjBfXr9AP40quADQ&start=100&sa=N&ved=0ahUKEwihpvWU6_bpAhX1NX0KHXjpCtAQ8NMDCMQD",
+        "other_pages": {
+            "2": "https://www.google.com/search?q=%D1%88%D0%BC%D0%B8%D0%B3%D0%B0%D0%BB%D1%8C&num=100&gl=ua&hl=uk&tbs=sbd:1,qdr:w&tbm=nws&ei=1prgXqHjBfXr9AP40quADQ&start=100&sa=N&ved=0ahUKEwihpvWU6_bpAhX1NX0KHXjpCtAQ8tMDCL4D",
+            "3": "https://www.google.com/search?q=%D1%88%D0%BC%D0%B8%D0%B3%D0%B0%D0%BB%D1%8C&num=100&gl=ua&hl=uk&tbs=sbd:1,qdr:w&tbm=nws&ei=1prgXqHjBfXr9AP40quADQ&start=200&sa=N&ved=0ahUKEwihpvWU6_bpAhX1NX0KHXjpCtAQ8tMDCMAD",
+            "4": "https://www.google.com/search?q=%D1%88%D0%BC%D0%B8%D0%B3%D0%B0%D0%BB%D1%8C&num=100&gl=ua&hl=uk&tbs=sbd:1,qdr:w&tbm=nws&ei=1prgXqHjBfXr9AP40quADQ&start=300&sa=N&ved=0ahUKEwihpvWU6_bpAhX1NX0KHXjpCtAQ8tMDCMID",
+            "Уперед": "https://www.google.com/search?q=%D1%88%D0%BC%D0%B8%D0%B3%D0%B0%D0%BB%D1%8C&num=100&gl=ua&hl=uk&tbs=sbd:1,qdr:w&tbm=nws&ei=1prgXqHjBfXr9AP40quADQ&start=100&sa=N&ved=0ahUKEwihpvWU6_bpAhX1NX0KHXjpCtAQ8NMDCMQD"
+        },
+        "api_pagination": {
+            "next": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=%D1%88%D0%BC%D0%B8%D0%B3%D0%B0%D0%BB%D1%8C&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_week&engine=google&page=2&num=100",
+            "other_pages": {
+                "2": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=%D1%88%D0%BC%D0%B8%D0%B3%D0%B0%D0%BB%D1%8C&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_week&engine=google&page=2&num=100",
+                "3": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=%D1%88%D0%BC%D0%B8%D0%B3%D0%B0%D0%BB%D1%8C&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_week&engine=google&page=3&num=100",
+                "4": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=%D1%88%D0%BC%D0%B8%D0%B3%D0%B0%D0%BB%D1%8C&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_week&engine=google&page=4&num=100",
+                "Уперед": "https://api.serpwow.com/live/search?api_key=FA2C2241D0A346A28A4A3A6E180C09A4&q=%D1%88%D0%BC%D0%B8%D0%B3%D0%B0%D0%BB%D1%8C&gl=ua&hl=uk&search_type=news&sort_by=date&time_period=last_week&engine=google&page=2&num=100"
+            }
+        }
+    },
+    "news_results": [
+        {
+            "position": 1,
+            "title": "Шмигаль розповів, на що витратять перший транш від МВФ",
+            "link": "https://tsn.ua/groshi/shmigal-rozpoviv-na-scho-vitratyat-pershiy-transh-vid-mvf-1562817.html",
+            "domain": "tsn.ua",
+            "source": "ТСН - Телевізійна служба новин",
+            "date": "6 хв. тому",
+            "snippet": "Про це 10 червня повідомив прем'єр-міністр України Денис Шмигаль в ефірі програми \"Ранок з Україною\". Уряд планує з допомогою грошей МВФ ...",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLOEK01g442Bgy92KcCASE61o7tKcNF0KVndHzx1krC72_iPSvDykMxJ83sQ6-aJPLzAGTLTL&s"
+        },
+        {
+            "position": 2,
+            "title": "Не буде цього: Кабмін дав важливу обіцянку усім українцям",
+            "link": "https://novyny.online.ua/821497/ne-bude-tsogo-kabmin-dav-vazhlivu-obitsyanku-usim-ukrayintsyam/",
+            "domain": "novyny.online.ua",
+            "source": "ONLINE.UA (прес-реліз) (Блог)",
+            "date": "7 хв. тому",
+            "snippet": "Про це Денис Шмигаль заявив в ефірі одного з українських телеканалів, передає ONLINE.UA. \"Щодо якихось змін цін і тарифів — це теж не прописано.",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLB7JpBAvjlbH8F7yUF5O_ei7TTSxq97EtIBju3zY5OZ6M0eBcNjuZhf6VytVAf5zave1ePefd&s"
+        },
+        {
+            "position": 3,
+            "title": "Шмигаль заявив, що меморандум з МВФ відкриває для ...",
+            "link": "https://glavcom.ua/economics/finances/shmigal-zayaviv-shcho-memorandum-z-mvf-vidkrivaje-dlya-ukrajini-dodatkovi-finansovi-mozhlivosti-685998.html",
+            "domain": "glavcom.ua",
+            "source": "ГЛАВКОМ",
+            "date": "10 хв. тому",
+            "snippet": "Кошти Світового банку та Євросоюзу істотно підсилять економічну спроможність країни та дозволять спокійніше пройти період криз, - Шмигаль.",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE3qHDDIXJCHUCEmiGTsm5-Gx_SeS8deWnChx9PBLlCxXfpPZqYarK0kyI4vS9SmgZq57lz9w&s"
+        },
+        {
+            "position": 4,
+            "title": "В угоді з МВФ немає вимог про зміну пенсійного віку ...",
+            "link": "https://uatv.ua/v-ugodi-z-mvf-nemaye-vymog-pro-zminu-pensijnogo-viku-shmygal/",
+            "domain": "uatv.ua",
+            "source": "uatv.ua",
+            "date": "11 хв. тому",
+            "snippet": "Денис Шмигаль наголосив, що Меморандум з МВФ не містить нових вимог для України щодо впровадження структурних реформ. “Вони (вимоги МВФ, – ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/49036a71b952839beb6e79aa3bfadf5670aaf37b.jpg"
+        },
+        {
+            "position": 5,
+            "title": "Нова угода з МВФ: Шмигаль розповів, чи підвищать ...",
+            "link": "https://www.unian.ua/economics/finance/ukrajina-i-mvf-chi-pidvishchat-pensiyniy-vik-ukrajinciv-novini-ukrajina-11030024.html",
+            "domain": "www.unian.ua",
+            "source": "УНІАН-Економіка",
+            "date": "27 хв. тому",
+            "snippet": "Шмигаль наголосив, що в меморандумі про співпрацю з МВФ немає жорстких вимог до конкретних речей (наприклад, щодо підвищення тарифів на ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 6,
+            "title": "Шмигаль збирає засідання Кабміну: Що на порядку денному",
+            "link": "https://zik.ua/news/politics/shmyhal_zbyraie_zasidannia_kabminu_shcho_na_poriadku_dennomu_971268",
+            "domain": "zik.ua",
+            "source": "Західна iнформаційна корпорація",
+            "date": "28 хв. тому",
+            "snippet": "Засідання розпочнеться о 13:00 і пройде під головуванням прем'єр-міністра Дениса Шмигаль. Для ЗМІ засідання буде проходити в режимі відеотрансляції.",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/fc6ba89b30e4a911a10319394e3a13f069171ed0.jpg"
+        },
+        {
+            "position": 7,
+            "title": "Шмигаль розповів, що буде з тарифами до зими",
+            "link": "https://glavcom.ua/economics/finances/shmigal-rozpoviv-shcho-bude-z-tarifami-do-zimi-685995.html",
+            "domain": "glavcom.ua",
+            "source": "ГЛАВКОМ",
+            "date": "35 хв. тому",
+            "snippet": "У наступному опалювальному сезоні комунальні платежі можуть зменшитися через зниження цін на газ. Про це заявив прем'єр-міністр Денис Шмигаль в ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/49036a71b952839beb6e79aa3bfadf5670aaf37b.jpg"
+        },
+        {
+            "position": 8,
+            "title": "Перший транш МВФ спрямують на розвиток економіки ...",
+            "link": "https://www.ukrinform.ua/rubric-economy/3042460-persij-trans-mvf-spramuut-na-rozvitok-ekonomiki-smigal.html",
+            "domain": "www.ukrinform.ua",
+            "source": "Укрінформ. Новини України та світу",
+            "date": "38 хв. тому",
+            "snippet": "Про це Прем'єр-міністр Денис Шмигаль сказав в ефірі програми \"Ранок з Україною\" , повідомляє кореспондент Укрінформу. \"Перший транш, безумовно ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 9,
+            "title": "Шмигаль розповів, коли Україна може отримати другий ...",
+            "link": "https://www.unian.ua/economics/finance/ukrajina-ta-mvf-koli-priyde-drugiy-transh-kreditu-novini-ukrajina-11030006.html",
+            "domain": "www.unian.ua",
+            "source": "УНІАН-Економіка",
+            "date": "39 хв. тому",
+            "snippet": "... програмою співпраці з Міжнародним валютним фондом у розмірі 700 млн дол., заявив в ефірі одного з телеканалів прем'єр-міністр Денис Шмигаль.",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 10,
+            "title": "Шмигаль розповів про умови кредиту від МВФ",
+            "link": "https://www.depo.ua/ukr/money/shmigal-rozpoviv-pro-umovi-kreditu-vid-mvf-202006101172910",
+            "domain": "www.depo.ua",
+            "source": "Depo.ua",
+            "date": "39 хв. тому",
+            "snippet": "Про це заявив прем'єр-міністр України Денис Шмигаль в ефірі телеканалу \"Україна-24\", передає Depo.ua з посиланням на \"Урядовий портал\". \"Вони ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/49036a71b952839beb6e79aa3bfadf5670aaf37b.jpg"
+        },
+        {
+            "position": 11,
+            "title": "Тарифи на компослуги в Україні можуть впасти",
+            "link": "https://24tv.ua/tarifi-komposlugi-ukrayini-mozhut-vpasti-novini-ukrayini_n1358062",
+            "domain": "24tv.ua",
+            "source": "24 Канал",
+            "date": "39 хв. тому",
+            "snippet": "Воно і не може бути прописано, це внутрішня справа України\", – запевнив Шмигаль. Зростання тарифів не буде. Він також зазначив, що в Україні ціни на ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/49036a71b952839beb6e79aa3bfadf5670aaf37b.jpg"
+        },
+        {
+            "position": 12,
+            "title": "Україна відновлює міжнародне авіасполучення з 15 червня ...",
+            "link": "https://zik.ua/news/ludyna/ukraina_vidnovliuie_mizhnarodne_aviaspoluchennia_z_15_chervnia_pravyla_dlia_prybuttia_z_chervonoi_ta_zelenoi_zon_971266",
+            "domain": "zik.ua",
+            "source": "Західна iнформаційна корпорація",
+            "date": "42 хв. тому",
+            "snippet": "Новини за темою: Внутрішнє і міжнародне авіасполучення в Україні: Шмигаль назвав дати запуску. Нагадаємо, раніше міністр транспорту Туреччини ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/ad626708e723d730007ba87b66c2faeb316d7757.jpg"
+        },
+        {
+            "position": 13,
+            "title": "Перший транш від МВФ очікується 11 червня, - уряд",
+            "link": "https://rubryka.com/2020/06/10/pershyj-transh-vid-mvf-ochikuyetsya-11-chervnya-uryad/",
+            "domain": "rubryka.com",
+            "source": "Рубрика (прес-реліз) (Блог)",
+            "date": "44 хв. тому",
+            "snippet": "Шмигаль зазначив, що це прямі кошти до держбюджету для боротьби з кризою COVID-19 та його наслідками. \"Перший транш 2,1 млрд доларів.",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 14,
+            "title": "Тарифи на комуналку: Шмигаль розповів, чого очікувати у ...",
+            "link": "https://wz.lviv.ua/news/414262-taryfy-na-komunalku-shmyhal-rozpoviv-choho-chekaty-u-novomu-opaliuvalnomu-sezoni",
+            "domain": "wz.lviv.ua",
+            "source": "Високий Замок (прес-реліз) (Блог)",
+            "date": "54 хв. тому",
+            "snippet": "Воно і не може бути прописано, це внутрішня справа України», — сказав глава уряду. Водночас Шмигаль зазначив, що в Україні ціни на електрику, газ і ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/1aa6410fa8ef3fa5a8125c7ffdba12a3bdd5e5ac.jpg"
+        },
+        {
+            "position": 15,
+            "title": "Перший транш від МВФ очікується за день-два – Шмигаль",
+            "link": "https://www.slovoidilo.ua/2020/06/10/novyna/ekonomika/pershyj-transh-mvf-ochikuyetsya-den-dva-shmyhal",
+            "domain": "www.slovoidilo.ua",
+            "source": "Слово і діло",
+            "date": "1 год. тому",
+            "snippet": "Далі це програма, яка розрахована на 18 місяців, а сам кредит розрахований на 5 років», - сказав Шмигаль. За його словами, МВФ з розумінням ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 16,
+            "title": "Денис Шмигаль: Кошти МВФ дадуть можливість Україні ...",
+            "link": "https://www.kmu.gov.ua/news/denis-shmigal-koshti-mvf-dadut-mozhlivist-ukrayini-rivno-projti-period-koronakrizi",
+            "domain": "www.kmu.gov.ua",
+            "source": "Урядовый портал",
+            "date": "1 год. тому",
+            "snippet": "Про це Прем'єр-міністр України Денис Шмигаль заявив в ефірі телеканалу \"Україна-24\". Очільник Уряду також наголосив, що під час остаточних ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 17,
+            "title": "﻿Перший транш МВФ Україна може отримати в найближчі ...",
+            "link": "https://gordonua.com/ukr/news/money/-pershij-trash-mvf-ukrajina-mozhe-otrimati-v-najblizhchi-den-dva-shmigal-1503664.html",
+            "domain": "gordonua.com",
+            "source": "ГОРДОН",
+            "date": "1 год. тому",
+            "snippet": "Перший транш МВФ Україна може отримати в найближчі день-два – Шмигаль. За словами прем'єр-міністра України Дениса Шмигаля, Міжнародний ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 18,
+            "title": "МВФ дав Україні кредит. 13 умов, під якими заради цього ...",
+            "link": "https://obriy.news/world/mvf-dav-ukrayini-kredyt-13-umov-pid-yakymy-zarady-czogo-pidpysalysya-zelenskyj-i-shmygal.html",
+            "domain": "obriy.news",
+            "source": "Обрій (прес-реліз) (Блог)",
+            "date": "1 год. тому",
+            "snippet": "13 умов, під якими заради цього підписалися Зеленський і Шмигаль. 10.06.2020. 0 коментарів. Вчора, 9 червня, Рада МВФ ухвалила рішення про ..."
+        },
+        {
+            "position": 19,
+            "title": "МВФ різко погіршив прогноз для економіки України",
+            "link": "https://glavcom.ua/economics/finances/mvf-rizko-pogirshiv-prognoz-dlya-ekonomiki-ukrajini-685971.html",
+            "domain": "glavcom.ua",
+            "source": "ГЛАВКОМ",
+            "date": "1 год. тому",
+            "snippet": "... має скласти 2,1 мільярда доларів (що на 200 мільйонів доларів більше, аніж очікувалося раніше). Глава українського уряду Денис Шмигаль вже заявив, ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/cb0f0e6f9c347feee18d4750db3062ef15a333e0.jpg"
+        },
+        {
+            "position": 20,
+            "title": "$5 млрд МВФ: Шмигаль розповів, що буде з грошима і чи ...",
+            "link": "https://gazeta.ua/articles/politics/_-5-mlrd-mvf-smigal-rozpoviv-scho-bude-z-groshima-i-chi-vplinut-voni-na-tarifi/969243",
+            "domain": "gazeta.ua",
+            "source": "Gazeta.ua",
+            "date": "1 год. тому",
+            "snippet": "Шмигаль нагадав: в Україні ціни на електрику, газ і опалення - ринкові. \"У тарифах на опалення все ще ціна на газ закладена, наприклад, 6500 гривень. За ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/49036a71b952839beb6e79aa3bfadf5670aaf37b.jpg"
+        },
+        {
+            "position": 21,
+            "title": "МВФ виділить Україні 5 мільярдів доларів",
+            "link": "https://galychyna.if.ua/analytic/mvf-vidilit-ukrayini-5-milyardiv-dolariv/",
+            "domain": "galychyna.if.ua",
+            "source": "Галичина",
+            "date": "1 год. тому",
+            "snippet": "Про це повідомив Прем'єр-міністр України Денис Шмигаль. «Зелене світло» від Міжнародного валютного фонду підтверджує відповідальність влади, ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 22,
+            "title": "Прем'єр-міністр розповів, на якому етапі відновлення від ...",
+            "link": "https://www.unn.com.ua/uk/news/1874075-premyer-ministr-rozpoviv-na-yakomu-etapi-vidnovlennya-vid-koronakrizi-znakhoditsya-ukrayina",
+            "domain": "www.unn.com.ua",
+            "source": "УНН",
+            "date": "1 год. тому",
+            "snippet": "Про це заявив в ефірі телеканалу \"Україна 24\" прем'єр-міністр України Денис Шмигаль, передає УНН. \"У нас позаду складний період з точки зору ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/5397a1daa22fbaa948e31011e05841be765e1738.jpg"
+        },
+        {
+            "position": 23,
+            "title": "Шмигаль заявив, що МВФ не вимагає підвищення тарифів і ...",
+            "link": "https://obriy.news/world/shmygal-zayavyv-shho-mvf-ne-vymagaye-pidvyshhennya-taryfiv-i-poobiczyav-spravedlyvu-czinu-na-gaz.html",
+            "domain": "obriy.news",
+            "source": "Обрій (прес-реліз) (Блог)",
+            "date": "2 год. тому",
+            "snippet": "Зокрема, там не прописані вимоги про зміну цін і тарифів в Україні, оскільки це внутрішня справа країни. Про це заявив прем'єр-міністр Денис Шмигаль в ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/49036a71b952839beb6e79aa3bfadf5670aaf37b.jpg"
+        },
+        {
+            "position": 24,
+            "title": "Перший транш від МВФ Україна отримає вже в червні ...",
+            "link": "https://zik.ua/news/economics/pershyi_transh_vid_mvf_ukraina_otrymaie_vzhe_v_chervni_shmyhal_971258",
+            "domain": "zik.ua",
+            "source": "Західна iнформаційна корпорація",
+            "date": "2 год. тому",
+            "snippet": "Прем'єр-міністр України Денис Шмигаль повідомив, що перший транш у розмірі 2,1 млрд доларів країна отримає вже в червні. Про це він написав у ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 25,
+            "title": "“Важкі часи ще попереду”: Шмигаль розповів, що чекає на ...",
+            "link": "https://vgolos.com.ua/news/vazhki-chasy-shhe-poperedu-shmygal-rozpoviv-shho-chekaye-na-ukrayinsku-ekonomiku_1252550.html",
+            "domain": "vgolos.com.ua",
+            "source": "Вголос",
+            "date": "2 год. тому",
+            "snippet": "Про це заявив прем'єр-міністр Денис Шмигаль в ефірі каналу “Україна 24”. За його словами, травень та квітень були провалені з точки зору ВВП. “Ми ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/5397a1daa22fbaa948e31011e05841be765e1738.jpg"
+        },
+        {
+            "position": 26,
+            "title": "\"Ми глибоко просіли\": Шмигаль попередив про важкі часи ...",
+            "link": "https://www.depo.ua/ukr/politics/mi-gliboko-prosili-shmigal-poperediv-pro-vazhki-chasi-dlya-ekonomiki-202006101172841",
+            "domain": "www.depo.ua",
+            "source": "Depo.ua",
+            "date": "2 год. тому",
+            "snippet": "Втім, Шмигаль вважає, що Україна знаходиться в збалансованих умовах кредитно-грошової політики. \"Ми шукаємо, запровадили і продовжуємо ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/5397a1daa22fbaa948e31011e05841be765e1738.jpg"
+        },
+        {
+            "position": 27,
+            "title": "\"Ми глибоко просіли\": Шмигаль назвав можливі терміни ...",
+            "link": "https://espreso.tv/news/2020/06/10/quotmy_glyboko_prosilyquot_shmygal_nazvav_mozhlyvi_terminy_vidnovlennya_ekonomiky",
+            "domain": "espreso.tv",
+            "source": "espreso.tv",
+            "date": "2 год. тому",
+            "snippet": "Міжнародний валютний фонд схвалив надання Україні $5 млрд у рамках кредитування за програмою stand-by. Все по темі. Денис Шмигаль · економіка ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/5397a1daa22fbaa948e31011e05841be765e1738.jpg"
+        },
+        {
+            "position": 28,
+            "title": "Шмигаль розповів, коли Україна отримає перший транш від ...",
+            "link": "https://www.5.ua/ekonomika/shmyhal-rozpoviv-koly-ukraina-otrymaie-pershyi-transh-vid-mvf-216883.html",
+            "domain": "www.5.ua",
+            "source": "Телеканал \"5 канал\"",
+            "date": "2 год. тому",
+            "snippet": "Кошти будуть спрямовані до державного бюджету для підтримки економіки та допомоги людям, – написав Шмигаль. Україна очікує перший транш від ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 29,
+            "title": "МВФ готова дати перший транш Україні – Шмигаль",
+            "link": "https://uapress.info/uk/news/show/177861",
+            "domain": "uapress.info",
+            "source": "Преса України",
+            "date": "2 год. тому",
+            "snippet": "Голова українського Уряду Денис Шмигаль повідомив, що днем раніше, 9 червня, МВФ схвалив нову програму кредитування stand-by для України. Мова ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 30,
+            "title": "Допомогу в 5 млрд доларів від МВФ Україна отримає у ...",
+            "link": "https://www.unn.com.ua/uk/news/1874069-transh-u-5-mlrd-dolariv-vid-mvf-ukrayina-otrimaye-u-dekilka-etapiv-detali",
+            "domain": "www.unn.com.ua",
+            "source": "УНН",
+            "date": "2 год. тому",
+            "snippet": "Про це заявив в ефірі телеканалу \"Україна 24\" прем'єр-міністр України Денис Шмигаль, передає УНН. \"5 млрд доларів - це той еквівалент, який ми ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 31,
+            "title": "Шмигаль запевнив, що транш від МВФ не вплине на ...",
+            "link": "https://www.unn.com.ua/uk/news/1874068-shmigal-zapevniv-scho-transh-vid-mvf-ne-vpline-na-pensiyniy-vik-v-ukrayini",
+            "domain": "www.unn.com.ua",
+            "source": "УНН",
+            "date": "2 год. тому",
+            "snippet": "Про це заявив в ефірі телеканалу Україна 24 Прем'єр-міністр України Денис Шмигаль, передає УНН. “Не прописано в умовах цієї програми жодних змін ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 32,
+            "title": "Шмигаль про економічну кризу в Україні: \"Ми глибоко ...",
+            "link": "https://censor.net.ua/ua/news/3201001/shmygal_pro_ekonomichnu_kryzu_v_ukrayini_my_glyboko_prosily_neprosti_chasy_mojlyvo_sche_poperedu",
+            "domain": "censor.net.ua",
+            "source": "Цензор.НЕТ",
+            "date": "2 год. тому",
+            "snippet": "Прем'єр-міністр Денис Шмигаль заявив, що Україна перебуває на складному етапі економічної кризи. Травень і квітень були провалені з точки зору ВВП.",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/ea1ebf0fb4075e1e6f5910e2e1fcb1a9d6a520cf.jpg"
+        },
+        {
+            "position": 33,
+            "title": "Ми сьогодні знаходимося на складному етапі економічної ...",
+            "link": "https://zik.ua/news/economics/my_sohodni_znakhodymosia_na_skladnomu_etapi_ekonomichnoi_kryzy_shmyhal_971256",
+            "domain": "zik.ua",
+            "source": "Західна iнформаційна корпорація",
+            "date": "2 год. тому",
+            "snippet": "Прем'єр-міністр України Денис Шмигаль заявив, що Україна наразі знаходиться на складному етапі економічної кризи. Про це він заявив в ефірі каналу ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/5397a1daa22fbaa948e31011e05841be765e1738.jpg"
+        },
+        {
+            "position": 34,
+            "title": "Шмигаль розповів, що буде з тарифами на комуналку в ...",
+            "link": "https://www.unian.ua/economics/energetics/tarifi-na-komunalku-shcho-bude-z-cinami-na-poslugi-zhkg-voseni-novini-sogodni-11029805.html",
+            "domain": "www.unian.ua",
+            "source": "УНІАН-Економіка",
+            "date": "2 год. тому",
+            "snippet": "Водночас Шмигаль зазначив, що в Україні ціни на електрику, газ і опалення - ринкові. \"В тарифах на опалення все ще ціна на газ закладена, наприклад, ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/49036a71b952839beb6e79aa3bfadf5670aaf37b.jpg"
+        },
+        {
+            "position": 35,
+            "title": "Прем'єр: у новій програмі МВФ не прописано, на що саме ...",
+            "link": "https://www.unn.com.ua/uk/news/1874067-premyer-u-noviy-programi-mvf-ne-propisano-na-scho-same-mayut-piti-koshti",
+            "domain": "www.unn.com.ua",
+            "source": "УНН",
+            "date": "2 год. тому",
+            "snippet": "І це підживлення дохідної частини бюджету”, - сказав Шмигаль. За його словами, точні статті, куди підуть кошти від МВФ, не прописані в програмі. “Це ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 36,
+            "title": "Уряд готовий презентувати доопрацьовану програму дій у ...",
+            "link": "https://armyinform.com.ua/2020/06/uryad-gotovyj-prezentuvaty-doopraczovanu-programu-dij-u-verhovnij-radi/",
+            "domain": "armyinform.com.ua",
+            "source": "АрміяInform",
+            "date": "2 год. тому",
+            "snippet": "Водночас Прем'єр-міністр України Денис Шмигаль зазначив, що Кабмін проситиме винести нову програму на розгляд парламенту та підтримати її 18-19 ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/7f5f6cefa074d15324299f3cfbf19674943c408b.jpg"
+        },
+        {
+            "position": 37,
+            "title": "Шмигаль оголосив, коли чекати першого траншу МВФ",
+            "link": "https://www.depo.ua/ukr/money/shmigal-ogolosiv-koli-chekati-pershogo-transhu-mvf-202006101172823",
+            "domain": "www.depo.ua",
+            "source": "Depo.ua",
+            "date": "2 год. тому",
+            "snippet": "Про це заявив прем'єр-міністр України Денис Шмигаль на своїй сторінці у Facebook, передає Depo.ua. \"Зелене світло\" від Міжнародного валютного ..."
+        },
+        {
+            "position": 38,
+            "title": "Шмигаль: Україна очікує перший транш від МВФ у 2,1 млрд ...",
+            "link": "https://www.unn.com.ua/uk/news/1874064-shmigal-ukrayina-ochikuye-pershiy-transh-vid-mvf-u-2-1-mlrd-dol-u-chervni",
+            "domain": "www.unn.com.ua",
+            "source": "УНН",
+            "date": "2 год. тому",
+            "snippet": "Про це на своїй сторінці у Facebook написав Прем'єр-міністр України Денис Шмигаль, передає УНН. \"Рада директорів МВФ схвалила програму Stand-by ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 39,
+            "title": "Зеленський: нова програма МВФ допоможе подолати ...",
+            "link": "https://www.radiosvoboda.org/a/news-zelenskyi-mvf/30662566.html",
+            "domain": "www.radiosvoboda.org",
+            "source": "Радіо Свобода",
+            "date": "2 год. тому",
+            "snippet": "Київ розраховує отримати його в червні, повідомив прем'єр-міністр Денис Шмигаль у Facebook. Міжнародний валютний фонд очікує, що валовий ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 40,
+            "title": "Шмигаль: ми сьогодні знаходимося на складному етапі ...",
+            "link": "https://www.rbc.ua/ukr/news/shmygal-segodnya-nahodimsya-slozhnom-etape-1591766968.html",
+            "domain": "www.rbc.ua",
+            "source": "РБК-Україна",
+            "date": "3 год. тому",
+            "snippet": "Прем'єр-міністр Денис Шмигаль заявив, що Україна знаходиться на складному етапі економічної кризи. Травень та квітень були провалені з точки зору ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/5397a1daa22fbaa948e31011e05841be765e1738.jpg"
+        },
+        {
+            "position": 41,
+            "title": "МВФ схвалив кредит для України",
+            "link": "https://racurs.ua/ua/n139485-mvf-shvalyv-kredyt-dlya-ukrayiny-shmygal-povidomyv-koly-nadiyde-pershyy-transh.html",
+            "domain": "racurs.ua",
+            "source": "Ракурс",
+            "date": "3 год. тому",
+            "snippet": "Прем'єр-міністр України Денис Шмигаль у Facebookповідомив, що перший транш від Міжнародного валютного фонду надійде в Україну у червні.",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 42,
+            "title": "Підозра ексголові ЛОДА та Зеленський про референдум та ...",
+            "link": "http://tvoemisto.tv/news/pizdozra_eksgolovi_loda_ta_zelenskyy_hoche_referendum_golovne_za_nich_i_mynulu_dobu_110295.html",
+            "domain": "tvoemisto.tv",
+            "source": "Tvoemisto.tv",
+            "date": "3 год. тому",
+            "snippet": "Уряд Шмигаля, за даними медіа, не планує послаблювати карантин у Львові. ... А прем'єр Шмигаль проситиме винести нову програму уряду на розгляд ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/b642d7b15e5148bbb58fea6b631cde5dd65f489c.jpg"
+        },
+        {
+            "position": 43,
+            "title": "МВФ схвалив надання Україні 18-місячної кредитної ...",
+            "link": "https://ua.112.ua/ekonomika/mvf-skhvalyv-nadannia-ukraini-18-misiachnoi-kredytnoi-prohramy-stand-by-na-5-mlrd-dol-538883.html",
+            "domain": "ua.112.ua",
+            "source": "Інформаційне Агентство 112.ua (Блог)",
+            "date": "9 год. тому",
+            "snippet": "Решта коштів буде розділена на чотири етапи. Нагадаємо, раніше прем'єр-міністр Денис Шмигаль спрогнозував, що Україна отримає перший транш від ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 44,
+            "title": "﻿Шмигаль обговорив із Фріланд лібералізацію візового ...",
+            "link": "https://gordonua.com/ukr/news/money/-shmigal-obgovoriv-z-friland-liberalizatsiju-vizovogo-rezhimu-mizh-ukrajinoju-i-kanadoju-1503652.html",
+            "domain": "gordonua.com",
+            "source": "ГОРДОН",
+            "date": "11 год. тому",
+            "snippet": "Віцепрем'єрка, міністерка міжурядових відносин Канади Христя Фріланд заявила українському прем'єру Денисові Шмигалю, що Оттава зацікавлена у ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/e9eed92454c91a1cde1b9804b730b7e0cb7024b9.jpg"
+        },
+        {
+            "position": 45,
+            "title": "Статистика знає?..",
+            "link": "http://www.golos.com.ua/article/331710",
+            "domain": "www.golos.com.ua",
+            "source": "Голос України",
+            "date": "11 год. тому",
+            "snippet": "заявив Шмигаль. Він зауважив, що ці робочі місця не будуть створені за один день. «Частина з них уже створена і створюється, частина буде створена ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/85cb1a65f2ecde7a7c9635fc1a100d531494207c.jpg"
+        },
+        {
+            "position": 46,
+            "title": "Кабмін представить оновлену програму дій вже цього ...",
+            "link": "https://24tv.ua/kabmin-predstavit-onovlenu-programu-diy-vzhe-tsogo-tizhnya-detali_n1357956",
+            "domain": "24tv.ua",
+            "source": "24 Канал",
+            "date": "11 год. тому",
+            "snippet": "Прем'єр-міністр Денис Шмигаль запевнив, що у новій версії програми врахували усі зауваження та проситимуть підтримати її 18 – 19 червня. \"Це ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/7f5f6cefa074d15324299f3cfbf19674943c408b.jpg"
+        },
+        {
+            "position": 47,
+            "title": "Кабмін вже цього тижня представить Раді свою \"Програму ...",
+            "link": "https://ua.112.ua/ekonomika/kabmin-vzhe-tsoho-tyzhnia-predstavyt-radi-svoiu-prohramu-dii-20-zelenskyi-538879.html",
+            "domain": "ua.112.ua",
+            "source": "Інформаційне Агентство 112.ua (Блог)",
+            "date": "11 год. тому",
+            "snippet": "Тиждень тому Шмигаль представив програму Кабміну, але попросив повернути її ... то уряд під головуванням Шмигаля написав документ на 9 сторінок.",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/7f5f6cefa074d15324299f3cfbf19674943c408b.jpg"
+        },
+        {
+            "position": 48,
+            "title": "Уряд готовий представити оновлену програму дій",
+            "link": "https://gazeta.ua/articles/politics/_uryad-gotovij-predstaviti-onovlenu-programu-dij/969217",
+            "domain": "gazeta.ua",
+            "source": "Gazeta.ua",
+            "date": "12 год. тому",
+            "snippet": "Прем'єр Денис Шмигаль зазначив, що Кабмін проситиме винести нову програму на розгляд парламенту та підтримати її 18-19 червня. За його словами ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/7f5f6cefa074d15324299f3cfbf19674943c408b.jpg"
+        },
+        {
+            "position": 49,
+            "title": "Шмигаль обговорив з Фріланд розширення торгівлі",
+            "link": "https://www.slovoidilo.ua/2020/06/09/novyna/polityka/shmyhal-obhovoryv-friland-rozshyrennya-torhivli",
+            "domain": "www.slovoidilo.ua",
+            "source": "Слово і діло",
+            "date": "12 год. тому",
+            "snippet": "Денис Шмигаль підтвердив зацікавленість України в активізації процесу і запевнив у готовності прийняти в Україні групу канадських експертів», - йдеться в ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/e9eed92454c91a1cde1b9804b730b7e0cb7024b9.jpg"
+        },
+        {
+            "position": 50,
+            "title": "﻿Шмигаль заявив, що подасть у Раду доопрацьовану ...",
+            "link": "https://gordonua.com/ukr/news/politics/-shmigal-zajaviv-shcho-podast-u-radu-doopratsovanu-programu-urjadu-na-nastupnomu-tizhni-1503644.html",
+            "domain": "gordonua.com",
+            "source": "ГОРДОН",
+            "date": "12 год. тому",
+            "snippet": "Кожен розділ містить очікувані результати й показники, як і належить для такої програми\", – запевнив Шмигаль. Кабмін Шмигаля Верховна Рада ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/7f5f6cefa074d15324299f3cfbf19674943c408b.jpg"
+        },
+        {
+            "position": 51,
+            "title": "Кабмін до кінця тижня готовий представити Раді оновлену ...",
+            "link": "https://www.slovoidilo.ua/2020/06/09/novyna/polityka/kabmin-kincya-tyzhnya-hotovyj-predstavyty-radi-onovlenu-prohramu",
+            "domain": "www.slovoidilo.ua",
+            "source": "Слово і діло",
+            "date": "12 год. тому",
+            "snippet": "Прем'єр Денис Шмигаль проінформував, що Програму дій уряду 2.0 винесуть на голосування у Раді 18−19 червня. «Це структурний документ, який ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/7f5f6cefa074d15324299f3cfbf19674943c408b.jpg"
+        },
+        {
+            "position": 52,
+            "title": "За крок до траншу: чи отримає Україна 2 мільярди і ...",
+            "link": "https://www.5.ua/ekonomika/za-krok-do-transhu-chy-otrymaie-ukraina-2-miliardy-i-dodatkovi-umovy-vid-mvf-216874.html",
+            "domain": "www.5.ua",
+            "source": "Телеканал \"5 канал\"",
+            "date": "13 год. тому",
+            "snippet": "А також – приведення ціни на газ для населення до ринкового рівня\", – сказав прем'єр-міністр Денис Шмигаль. Співпраця з мвф 5 канал. За словами ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 53,
+            "title": "Партія Порошенка збирає підписи за відставку уряду",
+            "link": "https://www.pravda.com.ua/news/2020/06/9/7255063/",
+            "domain": "www.pravda.com.ua",
+            "source": "Українська правда",
+            "date": "13 год. тому",
+            "snippet": "Від \"Європейської солідарності\" підпис поставила лише Яна Зінкевич. Тим часом прем'єр-міністр Денис Шмигаль зазначив, що Кабмін проситиме винести ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/3093a31dc8ad54b4d2407cad5838cef4443b08e4.jpg"
+        },
+        {
+            "position": 54,
+            "title": "Шмигаль обговорив із віцепрем'єром Канади лібералізацію ...",
+            "link": "https://zik.ua/news/politics/shmyhal_obhovoryv_iz_vitsepremierom_kanady_liberalizatsiiu_vizovoho_rezhymu_971233",
+            "domain": "zik.ua",
+            "source": "Західна iнформаційна корпорація",
+            "date": "13 год. тому",
+            "snippet": "Фріланд висловила зацікавленість у поглибленні співпраці в торгово-економічній сфері. Прем'єр-міністр України Денис Шмигаль провів телефонну ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/e9eed92454c91a1cde1b9804b730b7e0cb7024b9.jpg"
+        },
+        {
+            "position": 55,
+            "title": "Українці зможуть передавати пенсію у спадок: подробиці",
+            "link": "https://glavcom.ua/economics/finances/ukrajinci-zmozhut-peredavati-pensiyu-u-spadok-podrobici-685897.html",
+            "domain": "glavcom.ua",
+            "source": "ГЛАВКОМ",
+            "date": "13 год. тому",
+            "snippet": "Раніше прем'єр-міністр Денис Шмигаль повідомив, що накопичувальну пенсію в Україні можуть запровадити з 1 січня 2021 року. Як повідомлялося ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/ba4b6a2a0d7d2b462c2b4d7938068e8f087f699d.jpg"
+        },
+        {
+            "position": 56,
+            "title": "Виправили баги: Зеленський анонсував нову версію ...",
+            "link": "https://racurs.ua/ua/n139481-vypravyly-bagy-zelenskyy-anonsuvav-novu-versiu-programy-diy-kabminu-shmygalya.html",
+            "domain": "racurs.ua",
+            "source": "Ракурс",
+            "date": "13 год. тому",
+            "snippet": "Прем'єр-міністр України Денис Шмигаль зазначив, що Кабмін проситиме винести нову ... За словами Шмигаля, документ складається з двох розділів.",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/7f5f6cefa074d15324299f3cfbf19674943c408b.jpg"
+        },
+        {
+            "position": 57,
+            "title": "Кабмін представить оновлену програму дій уряду цього ...",
+            "link": "https://mind.ua/news/20211825-kabmin-predstavit-onovlenu-programu-dij-uryadu-cogo-tizhnya",
+            "domain": "mind.ua",
+            "source": "MIND UA",
+            "date": "13 год. тому",
+            "snippet": "Водночас прем'єр-міністр Денис Шмигаль зазначив, що Кабмін проситиме ... Дениса Шмигаля відправила на доопрацювання програму діяльності уряду.",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/7f5f6cefa074d15324299f3cfbf19674943c408b.jpg"
+        },
+        {
+            "position": 58,
+            "title": "Україна та Канада обговорили лібералізацію візового ...",
+            "link": "http://www.uapost.us/news/ukrayina-ta-kanada-obgovoryly-liberalizaciyu-vizovogo-rezhymu-ta-viljnu-torgivlyu-mizh-krayinamy/",
+            "domain": "www.uapost.us",
+            "source": "UaPost - Ukrainian American Media (Блог)",
+            "date": "13 год. тому",
+            "snippet": "Прем'єр-міністр України Денис Шмигаль провів телефонну розмову з Віце-прем'єр-міністром Канади Христею Фріланд на якій сторони обговорили ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/e9eed92454c91a1cde1b9804b730b7e0cb7024b9.jpg"
+        },
+        {
+            "position": 59,
+            "title": "Україна і Канада домовляються про лібералізацію візового ...",
+            "link": "https://ua.112.ua/polityka/ukraina-i-kanada-domovliaiutsia-pro-liberalizatsiiu-vizovoho-rezhymu-i-zony-vilnoi-torhivli-538872.html",
+            "domain": "ua.112.ua",
+            "source": "Інформаційне Агентство 112.ua (Блог)",
+            "date": "13 год. тому",
+            "snippet": "Денис Шмигаль провів телефонну розмову з Христею Фріланд. 21:36 09.06.2020. Twitter Петра Порошенко. Прем'єр-міністр України Денис Шмигаль ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/e9eed92454c91a1cde1b9804b730b7e0cb7024b9.jpg"
+        },
+        {
+            "position": 60,
+            "title": "Кабмін завершив роботу над оновленою Програмою дій та ...",
+            "link": "https://nv.ua/ukr/ukraine/politics/kabmin-gotoviy-predstaviti-parlamentu-onovlenu-programu-diy-novini-ukrajini-50093173.html",
+            "domain": "nv.ua",
+            "source": "НВ",
+            "date": "14 год. тому",
+            "snippet": "Уряд Дениса Шмигаля готовий цього тижня представити Верховній Раді оновлену ... Прем'єр Денис Шмигаль проінформував, що Програму дій уряду 2.0 ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/7f5f6cefa074d15324299f3cfbf19674943c408b.jpg"
+        },
+        {
+            "position": 61,
+            "title": "Шмигаль покаже нардепам нову Програму дій наступного ...",
+            "link": "http://www.pravda.com.ua/news/2020/06/9/7255060/",
+            "domain": "www.pravda.com.ua",
+            "source": "Українська правда",
+            "date": "14 год. тому",
+            "snippet": "Прем'єр-міністр Денис Шмигаль зазначив, що Кабмін проситиме винести нову програму на розгляд парламенту та підтримати її 18-19 червня. Джерело: ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/af3d090a157a1a10da678236f1a7261ff0e46b37.jpg"
+        },
+        {
+            "position": 62,
+            "title": "Кабмін готовий до кінця тижня представити оновлену ...",
+            "link": "https://ua.interfax.com.ua/news/general/667740.html",
+            "domain": "ua.interfax.com.ua",
+            "source": "Інтерфакс-Україна",
+            "date": "14 год. тому",
+            "snippet": "Одночасно прем'єр-міністр України Денис Шмигаль зазначив, що Кабмін буде просити винести нову програму дій на розгляд парламенту і підтримати її ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/7f5f6cefa074d15324299f3cfbf19674943c408b.jpg"
+        },
+        {
+            "position": 63,
+            "title": "Шмигаль і Фріланд поговорили про лібералізацію візового ...",
+            "link": "https://www.pravda.com.ua/news/2020/06/9/7255059/",
+            "domain": "www.pravda.com.ua",
+            "source": "Українська правда",
+            "date": "14 год. тому",
+            "snippet": "Прем'єр України Денис Шмигаль у першій телефонній розмові з віцепрем'єркою Канади Христею Фріланд обговорив питання лібералізації візового ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/e9eed92454c91a1cde1b9804b730b7e0cb7024b9.jpg"
+        },
+        {
+            "position": 64,
+            "title": "Канадські інвестиції та візи: Шмигаль поговорив із Фріланд",
+            "link": "https://www.ukrinform.ua/rubric-polytics/3042212-kanadski-investicii-ta-vizi-smigal-pogovoriv-telefonom-iz-friland.html",
+            "domain": "www.ukrinform.ua",
+            "source": "Укрінформ. Новини України та світу",
+            "date": "14 год. тому",
+            "snippet": "Прем'єр-міністр України Денис Шмигаль обговорив під час телефонної розмови з віцепрем'єр-міністром Канади Христею Фріланд співробітництва двох ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/e9eed92454c91a1cde1b9804b730b7e0cb7024b9.jpg"
+        },
+        {
+            "position": 65,
+            "title": "Шмигаль обіцяв 500 тис. робочих місць, а у нас після ...",
+            "link": "https://video-ua.112.ua/shmyhal-obitsiav-500-tys-robochykh-mists-a-u-nas-pislia-karantynu-bezrobitnykh-na-500-tys-zbilshylasia-spivak-324548.html",
+            "domain": "video-ua.112.ua",
+            "source": "Інформаційне Агентство 112.ua (Блог)",
+            "date": "14 год. тому",
+            "snippet": "The media could not be loaded, either because the server or network failed or because the format is not supported. Beginning of dialog window. Escape will ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/ffc95062a8482e3bc347e1c6835212e20c1ecda8.jpg"
+        },
+        {
+            "position": 66,
+            "title": "Саакашвілі зустрівся з ФОПами і розказав, чого вони ...",
+            "link": "https://glavcom.ua/news/saakashvili-zustrivsya-z-fopami-i-rozkazav-chogo-voni-hochut-vid-vladi-685888.html",
+            "domain": "glavcom.ua",
+            "source": "ГЛАВКОМ",
+            "date": "14 год. тому",
+            "snippet": "До цього передбачалося, що він стане віце-прем'єром з питань реформ в уряді Дениса Шмигаля. Опитування. Читайте нас Google News ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/9fc51907a3a4acb4d4166a0cb0f06bddcbbf4574.jpg"
+        },
+        {
+            "position": 67,
+            "title": "Шмигаль обговорив із українською віцепрем'єркою Канади ...",
+            "link": "https://www.depo.ua/ukr/politics/shmigal-obgovoriv-iz-ukrainskoyu-vitsepremerkoyu-kanadi-poslablennya-vizovogo-rezhimu-202006091172739",
+            "domain": "www.depo.ua",
+            "source": "Depo.ua",
+            "date": "15 год. тому",
+            "snippet": "Про це повідомляє Depo.ua. Денис Шмигаль провів розмову із заступницею прем'єрміністра Канади, етнічною українкою Христею Фріланд.",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/e9eed92454c91a1cde1b9804b730b7e0cb7024b9.jpg"
+        },
+        {
+            "position": 68,
+            "title": "Шмигаль обговорив із Фріланд лібералізацію візового ...",
+            "link": "https://ua.interfax.com.ua/news/economic/667724.html",
+            "domain": "ua.interfax.com.ua",
+            "source": "Інтерфакс-Україна",
+            "date": "15 год. тому",
+            "snippet": "Прем'єр-міністр України Денис Шмигаль під час першої телефонної розмови з віце-прем'єром Канади Христею Фріланд обговорив питання лібералізації ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/e9eed92454c91a1cde1b9804b730b7e0cb7024b9.jpg"
+        },
+        {
+            "position": 69,
+            "title": "﻿В Україні дітям-сиротам хочуть дозволити жити у ...",
+            "link": "https://gordonua.com/ukr/news/society/-v-ukrajini-ditjam-sirotam-hochut-dozvoliti-zhiti-u-prijomnih-sim-jah-do-23-rokiv-1503603.html",
+            "domain": "gordonua.com",
+            "source": "ГОРДОН",
+            "date": "16 год. тому",
+            "snippet": "Прем'єр-міністр України Денис Шмигаль ініціював поправки до Сімейного кодексу, які дадуть змогу прийомним дітям жити в дитячих будинках сімейного ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/5eb198bd611fe6cd9854456c881dc1cb9061bd7d.jpg"
+        },
+        {
+            "position": 70,
+            "title": "В Україні хочуть диджиталізувати кожне міністерство ...",
+            "link": "https://www.unian.ua/economics/telecom/didzhitalizaciya-vsi-ministerstva-perevedut-v-cifru-novini-11029376.html",
+            "domain": "www.unian.ua",
+            "source": "УНІАН-Економіка",
+            "date": "17 год. тому",
+            "snippet": "Як повідомляв УНІАН, 7 травня прем'єр-міністр України Денис Шмигаль доручив всім міністерствам протягом двох тижнів створити посаду заступника ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/33c54fbdaf731770aa443d7d53137d3d70cc39f4.jpg"
+        },
+        {
+            "position": 71,
+            "title": "Робота дитячих таборів і пандемія COVID-19: що пропонує ...",
+            "link": "https://24tv.ua/ukrayini-provedut-audit-litnih-taboriv-dlya-ditey_n1357715",
+            "domain": "24tv.ua",
+            "source": "24 Канал",
+            "date": "18 год. тому",
+            "snippet": "Тим часом глава уряду Денис Шмигаль переконує: у Кабміні уважно ставляться до інформації ВООЗ щодо погіршення ситуації з коронавірусом у ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/f1a09734795e390d5686351b015e78b44e79bdfc.jpg"
+        },
+        {
+            "position": 72,
+            "title": "В уряді сказали, коли чекати першого траншу кредиту МВФ ...",
+            "link": "https://espreso.tv/news/2020/06/09/v_uryadi_skazaly_koly_chekaty_pershogo_transhu_kredytu_mvf_ta_na_scho_pidut_ci_groshi",
+            "domain": "espreso.tv",
+            "source": "espreso.tv",
+            "date": "20 год. тому",
+            "snippet": "Шмигаль повідомив, що засідання Ради МВФ відбудеться до 10 червня, де буде остаточно прийняте рішення про виділення Україні траншу в розмірі $5 ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 73,
+            "title": "Відпочинок в умовах COVID-19: Президент пропонує аудит ...",
+            "link": "https://www.ukrinform.ua/rubric-society/3041933-vidpocinok-v-umovah-covid19-prezident-proponue-provesti-audit-ditacih-taboriv.html",
+            "domain": "www.ukrinform.ua",
+            "source": "Укрінформ. Новини України та світу",
+            "date": "21 год. тому",
+            "snippet": "Прем'єр-міністр Денис Шмигаль повідомив, що уряд уважно ставиться до інформації ВООЗ щодо погіршення ситуації з коронавірусом у глобальному ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/f1a09734795e390d5686351b015e78b44e79bdfc.jpg"
+        },
+        {
+            "position": 74,
+            "title": "\"Укроборонпром\" змінив директора \"Антонова\" після ...",
+            "link": "https://www.rbc.ua/ukr/news/ukroboronprom-uvolil-direktora-gp-antonov-1591700700.html",
+            "domain": "www.rbc.ua",
+            "source": "РБК-Україна",
+            "date": "21 год. тому",
+            "snippet": "Зазначимо, Денис Шмигаль доручив провести перевірку ДП \"Антонов\" після того як в СБУ надали листа прем'єр-міністру з даними щодо наявної ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/53484335ee16b1a073f16935475715872e497735.jpg"
+        },
+        {
+            "position": 75,
+            "title": "Легенда йде. Мережа Pizza Celentano закриває всі ...",
+            "link": "https://nv.ua/ukr/biz/economics/pizza-celentano-yde-z-kiyeva-novini-kiyeva-50092691.html",
+            "domain": "nv.ua",
+            "source": "НВ",
+            "date": "21 год. тому",
+            "snippet": "Уряд під керівництвом прем'єра Дениса Шмигаля вже три місяці працює без ... підтримки немає і не буде, Шмигаль сам запропонував відкликати проєкт ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/d077cf321c0c77d6bd83d70cac23dbb24eceb004.jpg"
+        },
+        {
+            "position": 76,
+            "title": "Можлива відставка - у Зеленського зважилися на ...",
+            "link": "https://novyny.online.ua/821468/mozhliva-vidstavka-u-zelenskogo-zvazhilisya-na-neochikuvane-ziznannya/",
+            "domain": "novyny.online.ua",
+            "source": "ONLINE.UA (прес-реліз) (Блог)",
+            "date": "21 год. тому",
+            "snippet": "... уряду на чолі з прем'єром Денисом Шмигалем. За попередніми даними, це може статися ще в жовтні поточного року перед місцевими виборами.",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/a37065d1f60328448df42686551bce5049739fca.jpg"
+        },
+        {
+            "position": 77,
+            "title": "Аваков попросив у Шмигаля 2.5 мільярда гривень: стало ...",
+            "link": "https://ura-inform.com/uk/politics/2020/06/09/avakov-poprosil-u-shmygalja-2-5-milliarda-griven-stalo-izvestno-na-chto",
+            "domain": "ura-inform.com",
+            "source": "Ура-Iнформ",
+            "date": "9 черв. 2020 р.",
+            "snippet": "Аваков попросив у Шмигаля 2.5 мільярда гривень: стало відомо на що ... були направлені на ім'я прем'єр-міністра України Дениса Шмигаль 27 травня.",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/aeeb8d7d1e787b19820ce4ecdeb03b81093628b7.jpg"
+        },
+        {
+            "position": 78,
+            "title": "Президент представив новопризначеного голову Служби ...",
+            "link": "https://www.vectornews.net/news/politics/174341-prezident-predstaviv-novopriznachenogo-golovu-sluzhbi-zovnshnoyi-rozvdki-ukrayini.html",
+            "domain": "www.vectornews.net",
+            "source": "МІА Вектор Ньюз",
+            "date": "9 черв. 2020 р.",
+            "snippet": "На церемонії були присутні Прем'єр-міністр України Денис Шмигаль, керівник Офісу Президента Андрій Єрмак, секретар РНБО Олексій Данілов, міністр ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/21b4ab6bf51bc64c7937fe5ab806ed3d02bd31e6.jpg"
+        },
+        {
+            "position": 79,
+            "title": "Шмигаль на паузі: Чи звільнять прем'єра?",
+            "link": "http://ua.112.ua/statji/shmyhal-na-pauzi-chy-zvilniat-premiera-538794.html",
+            "domain": "ua.112.ua",
+            "source": "Інформаційне Агентство 112.ua (Блог)",
+            "date": "9 черв. 2020 р.",
+            "snippet": "Сьогодні в ролі Тома і Джері – Зеленський та Шмигаль. І це лише перші кадри мультфільму. В усьому винен коронавірус. Програма діяльності Кабінету ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/2c6c80e99b1c3fde3925d4ed9364689237d69faa.jpg"
+        },
+        {
+            "position": 80,
+            "title": "Шмигаль прокоментував програму Кабміну, яку ...",
+            "link": "https://www.slovoidilo.ua/2020/06/09/novyna/polityka/shmyhal-prokomentuvav-prohramu-kabminu-yaku-zabrakuvaly-nardepy",
+            "domain": "www.slovoidilo.ua",
+            "source": "Слово і діло",
+            "date": "9 черв. 2020 р.",
+            "snippet": "Тому Шмигаль попросив час на доопрацювання. При цьому Шмигаль назвав свої відносини як з парламентом, так і з Офісом президента «конструктивними ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/cfa71954eac3f092dec18eeab68ec44b2336fe53.jpg"
+        },
+        {
+            "position": 81,
+            "title": "Чому програму уряду відправили на доопрацювання ...",
+            "link": "https://espreso.tv/news/2020/06/09/chomu_programu_uryadu_vidpravyly_na_doopracyuvannya_poyasnennya_premyera",
+            "domain": "espreso.tv",
+            "source": "espreso.tv",
+            "date": "9 черв. 2020 р.",
+            "snippet": "Водночас Шмигаль називає свої відносини як із парламентом, так і з Офісом президентом \"конструктивними\". Нагадаємо, раніше комітети ВР на ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/cfa71954eac3f092dec18eeab68ec44b2336fe53.jpg"
+        },
+        {
+            "position": 82,
+            "title": "Кількість реєстрацій нових ФОП повернулася до ...",
+            "link": "https://news.finance.ua/ua/news/-/472303/kilkist-reyestratsij-novyh-fop-povernulasya-do-dokryzovogo-periodu",
+            "domain": "news.finance.ua",
+            "source": "Finance.ua",
+            "date": "9 черв. 2020 р.",
+            "snippet": "Шмигаль очікує на швидке рішення Верховної Ради щодо урядового законопроєкту, який запустить програму “Нові гроші” для українських підприємців.",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/909b98f9a3e017dcd82f1548bf009f502a36a792.jpg"
+        },
+        {
+            "position": 83,
+            "title": "Кабмін може піти у відставку – депутат",
+            "link": "https://uapress.info/uk/news/show/177846",
+            "domain": "uapress.info",
+            "source": "Преса України",
+            "date": "9 черв. 2020 р.",
+            "snippet": "... Якщо їй не дадуть зелене світло, то уряд Шмигаля може піти у відставку. ... програму дій Кабміну. Якщо Денис Шмигаль не переконає Верховну Раду, ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/abd9e3428aa8760904795ff5799be917122799ab.jpg"
+        },
+        {
+            "position": 84,
+            "title": "Стала відома зарплата Шмигаля за травень",
+            "link": "https://www.slovoidilo.ua/2020/06/09/novyna/polityka/stala-vidoma-zarplata-shmyhalya-traven",
+            "domain": "www.slovoidilo.ua",
+            "source": "Слово і діло",
+            "date": "9 черв. 2020 р.",
+            "snippet": "Прем'єр-міністр України Денис Шмигаль заробив в травні 46 тис. 602,68 грн (отримав 37 тис. 515,16 грн). Його оклад становив 56,1 тис. грн, ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/aaaf630075b3426c67df5b595bb9b86f62e0424b.jpg"
+        },
+        {
+            "position": 85,
+            "title": "Кабмін може піти у відставку: в “Слузі народу” зробили ...",
+            "link": "https://vgolos.com.ua/news/kabmin-mozhe-pity-u-vidstavku-v-sluzi-narodu-zrobyly-terminovu-zayavu_1251655.html",
+            "domain": "vgolos.com.ua",
+            "source": "Вголос",
+            "date": "9 черв. 2020 р.",
+            "snippet": "... Шмигаль не переконає Верховну Раду, його уряд може втратити імунітет. ... Рада матиме 15 днів на вирішення майбутнього уряду Дениса Шмигаля."
+        },
+        {
+            "position": 86,
+            "title": "Шмигаль пояснив, чому програма діяльності Кабміну ...",
+            "link": "https://www.rbc.ua/ukr/news/shmygal-obyasnil-pochemu-programma-deyatelnosti-1591686186.html",
+            "domain": "www.rbc.ua",
+            "source": "РБК-Україна",
+            "date": "9 черв. 2020 р.",
+            "snippet": "Тому Шмигаль попросив час на доопрацювання. У той самий момент, Шмигаль називає свої відносини як із парламентом, так і з Офісом президентом \" ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/cfa71954eac3f092dec18eeab68ec44b2336fe53.jpg"
+        },
+        {
+            "position": 87,
+            "title": "МВФ сьогодні розгляне нову кредитну програму для України",
+            "link": "https://www.unian.ua/economics/finance/ukrajina-i-mvf-sogodni-mvf-rozglyane-kreditnu-programu-dlya-ukrajini-novini-ukrajina-11028398.html",
+            "domain": "www.unian.ua",
+            "source": "УНІАН-Економіка",
+            "date": "9 черв. 2020 р.",
+            "snippet": "Як повідомляв УНІАН, прем'єр-міністр України Денис Шмигаль минулого тижня заявив, що рішення про перший транш в рамках нової програми співпраці ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 88,
+            "title": "В Україні зафіксували майже 400 нових випадків COVID-19",
+            "link": "https://tyzhden.ua/News/244465",
+            "domain": "tyzhden.ua",
+            "source": "Тиждень.ua",
+            "date": "8 черв. 2020 р.",
+            "snippet": "Нагадаємо, прем'єр-міністр Денис Шмигаль заявив, що за умови серйозного погіршення епідеміологічної ситуації графік виходу України з карантину ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/f623e0a71d05cdd38033184ace189a66acf3f502.jpg"
+        },
+        {
+            "position": 89,
+            "title": "Кабмін Шмигаля може залишитися без імунітету: у Раді ...",
+            "link": "https://www.rbc.ua/ukr/news/kabmin-shmygalya-ostatsya-immuniteta-rade-1591683813.html",
+            "domain": "www.rbc.ua",
+            "source": "РБК-Україна",
+            "date": "8 черв. 2020 р.",
+            "snippet": "Кабмін Шмигаля може залишитися без імунітету: у Раді назвали умову. Новини » Політика 09.06.2020 - 09:23 Новость на русском. Кабмін Шмигаля може ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/cfa71954eac3f092dec18eeab68ec44b2336fe53.jpg"
+        },
+        {
+            "position": 90,
+            "title": "МВФ за крок до нової програми для України. Чи отримає ...",
+            "link": "https://www.bbc.com/ukrainian/features-52951287",
+            "domain": "www.bbc.com",
+            "source": "BBC Україна",
+            "date": "8 черв. 2020 р.",
+            "snippet": "Проте прем'єр-міністр Денис Шмигаль заявив, що \"прихильники політичних спекуляцій почали поширювати міфи навколо меморандуму з МВФ\". Але і не ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 91,
+            "title": "5 млрд доларів в обмін на рейтинг: Ким влада пожертвує ...",
+            "link": "https://www.depo.ua/ukr/politics/5-mlrd-dolariv-v-obmin-na-reyting-kim-vlada-pozhertvue-zaradi-kreditu-mvf-202006091172217",
+            "domain": "www.depo.ua",
+            "source": "Depo.ua",
+            "date": "8 черв. 2020 р.",
+            "snippet": "Шмигаль запевняє: підвищувати пенсійний вік уряд не планує. Однак це не зовсім так, адже з 1 квітня пенсійний вік для жінок вже зріс з 59 років до 59 років ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/bbdbcc4ab048bb89fe09e2c8d72ccfcc9264e0c6.jpg"
+        },
+        {
+            "position": 92,
+            "title": "У тіні Зеленського: як працює Кабмін Дениса Шмигаля",
+            "link": "https://www.rbc.ua/ukr/news/teni-zelenskogo-rabotaet-kabmin-denisa-shmygalya-1591601137.html",
+            "domain": "www.rbc.ua",
+            "source": "РБК-Україна",
+            "date": "8 черв. 2020 р.",
+            "snippet": "Кабінет міністрів Дениса Шмигаля наближається до стоденного рубежу своєї роботи. Три місяці новий уряд пропрацював без кількох міністрів і програми ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/cfa71954eac3f092dec18eeab68ec44b2336fe53.jpg"
+        },
+        {
+            "position": 93,
+            "title": "Шмигаль може послабити карантин на Львівщині та перша ...",
+            "link": "http://tvoemisto.tv/news/shmygal_mozhe_poslabyty_karantyn_na_lvivshchyni_ta_persha_zayava_ministra_kultury_golovne_za_nich_i_mynulu_dobu_110263.html",
+            "domain": "tvoemisto.tv",
+            "source": "Tvoemisto.tv",
+            "date": "8 черв. 2020 р.",
+            "snippet": "Мер Львова Садовий і голова ОДА Козицький звернулись до прем'єра Шмигаля із проханням дозволити роботу спортивних закладів і транспортних ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/f77359769925fa7defd92b49b820b1a52b27951c.jpg"
+        },
+        {
+            "position": 94,
+            "title": "Заробітчани масово йдуть в Польщу на роботу: піший ...",
+            "link": "https://dailylviv.com/news/sytuatsiyi-i-pryhody/zarobitchany-masovo-idut-v-polshchu-na-robotu-pishyi-perekhid-na-lvivshchyni-ne-vporuietsya-84254",
+            "domain": "dailylviv.com",
+            "source": "DailyLviv.com",
+            "date": "8 черв. 2020 р.",
+            "snippet": "Адже 6 червня Денис Шмигаль провів робочу нараду у Львові щодо ситуації з коронавірусом у регіоні за зачиненими дверима, але жодного офіційного ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/51b8c0ed06a06de8ceef7627840353d4cdf50dc4.jpg"
+        },
+        {
+            "position": 95,
+            "title": "Прем'єр-міністр виступив проти відновлення в районах ...",
+            "link": "https://vbusk.com/cikavo/prem-ier-ministr-vistypiv-proti-vidnovlennia-v-raionah-oblasti-gromadskogo-transporty.html",
+            "domain": "vbusk.com",
+            "source": "Буський медіа портал (прес-реліз)",
+            "date": "8 черв. 2020 р.",
+            "snippet": "До протестувальників Денис Шмигаль побоявся вийти. Під час наради Денис Шмигаль зазначив, що за статистикою останніх днів Львівська область стала ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/3d284c6b9d8a0cff29bde3e320ecac2aa12ee65e.jpg"
+        },
+        {
+            "position": 96,
+            "title": "Українці зможуть отримувати по дві або три пенсії",
+            "link": "https://1news.com.ua/ukraine/ukrayintsi-zmozhut-otrymuvaty-po-dvi-abo-try-pensiyi.html",
+            "domain": "1news.com.ua",
+            "source": "1NEWS Україна",
+            "date": "8 черв. 2020 р.",
+            "snippet": "Про це неодноразово заявляв прем'єр-міністр України Денис Шмигаль, передає 1NEWS з посиланням на Главком. Це одне з питань, яке обговорювалося з ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/2f3698eaee518b2e10dc98cbcf9d6cf07ab62e71.jpg"
+        },
+        {
+            "position": 97,
+            "title": "Зеленський скасував відновлення розваг в Україні",
+            "link": "https://narodna-pravda.ua/2020/06/08/zelenskij-skasuvav-vidnovlennya-rozvag-v-ukrayini/",
+            "domain": "narodna-pravda.ua",
+            "source": "Народна Правда",
+            "date": "8 черв. 2020 р.",
+            "snippet": "Зі свого боку прем'єр-міністр Денис Шмигаль наголосив, що люди повинні усвідомлено сприймати загрозу коронавірусу, яка нікуди не зникла. Нагадаємо ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/c89116cf988d58ca601b49225eb662fd080d3e04.jpg"
+        },
+        {
+            "position": 98,
+            "title": "В Україні скасують трудові книжки та призначатимуть пенсії ...",
+            "link": "https://transkarpatia.net/ukraine/128467-v-ukraiin-skasuiut-trudov-knizhki-ta-priznachatimut-pensii-po-novomu-shmigal-rozpovv-detal.html",
+            "domain": "transkarpatia.net",
+            "source": "Новини Закарпаття",
+            "date": "8 черв. 2020 р.",
+            "snippet": "Шмигаль наголосив, що в Україні запустять електронні трудові книжки, відтак буде менше паперу, а пенсії нараховуватимуться автоматично, без ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/415c8421cb665cdd213c0b5b3036993c766846b2.jpg"
+        },
+        {
+            "position": 99,
+            "title": "Не забувайте - Зеленський зробив гнівне попередження ...",
+            "link": "https://novyny.online.ua/821443/ne-zabuvayte-zelenskiy-zrobiv-gnivne-poperedzhennya-ukrayintsyam/",
+            "domain": "novyny.online.ua",
+            "source": "ONLINE.UA (прес-реліз) (Блог)",
+            "date": "8 черв. 2020 р.",
+            "snippet": "Шмигаль наголосив, що загроза нікуди не зникла, тому закликав українців бути свідомими і не піддавати своє здоров'я і життя небезпеці. Крім того, глава ...",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/9b1e1068eb835db648d9fd7ecbfa1a6b9ba00cd7.jpg"
+        },
+        {
+            "position": 100,
+            "title": "Темпи реєстрації ФОП повернулися до «докарантинних ...",
+            "link": "http://uzinform.com.ua/news/2020/06/08/173775.html",
+            "domain": "uzinform.com.ua",
+            "source": "УкрЗахідІнформ (UkrZahidInform)",
+            "date": "8 черв. 2020 р.",
+            "snippet": "Кількість фізичних осіб-підприємців, які зареєструвалися за тиждень, сягнула показників до карантину, заявив прем'єр-міністр України Денис Шмигаль.",
+            "thumbnail": "https://api.serpwow.com/download/images/1006202008/909b98f9a3e017dcd82f1548bf009f502a36a792.jpg"
+        }
+    ]
+}

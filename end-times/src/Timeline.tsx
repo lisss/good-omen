@@ -3,8 +3,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import 'rc-tooltip/assets/bootstrap.css';
 import './Timeline.css';
 import React, { useState } from 'react';
-import { NewsResult } from './resl';
-import Tooltip from 'rc-tooltip';
+import { NewsResult } from './types';
 
 const TimelineElement = ({ link, date, title, thumbnail }: NewsResult) => {
     const [expanded, setExpanded] = useState(false);
@@ -13,21 +12,19 @@ const TimelineElement = ({ link, date, title, thumbnail }: NewsResult) => {
 
     return (
         <div onClick={toggleExpanded} className="vertical-timeline-element">
-            <Tooltip overlay="eee">
-                <VerticalTimelineElement
-                    date={date}
-                    iconStyle={{ backgroundImage: `url(${thumbnail})`, color: '#fff' }}
-                >
-                    <h3 className="vertical-timeline-element-title timeline-head">{title}</h3>
-                    {expanded && (
-                        <div className="timeline-details">
-                            <a href={link} target="_blank">
-                                читати
-                            </a>
-                        </div>
-                    )}
-                </VerticalTimelineElement>
-            </Tooltip>
+            <VerticalTimelineElement
+                date={date}
+                iconStyle={{ backgroundImage: `url(${thumbnail})`, color: '#fff' }}
+            >
+                <h3 className="vertical-timeline-element-title timeline-head">{title}</h3>
+                {expanded && (
+                    <div className="timeline-details">
+                        <a href={link} target="_blank">
+                            читати
+                        </a>
+                    </div>
+                )}
+            </VerticalTimelineElement>
         </div>
     );
 };
@@ -35,8 +32,8 @@ const TimelineElement = ({ link, date, title, thumbnail }: NewsResult) => {
 export const TimeLine = ({ data }: { data: NewsResult[] | null }) =>
     data && (
         <VerticalTimeline layout={'2-columns'}>
-            {data.map(({ date, ...rest }, i) => (
-                <TimelineElement {...{ date, ...rest }} key={date + i} />
+            {data.map(({ title, ...rest }, i) => (
+                <TimelineElement {...{ title, ...rest }} key={title} />
             ))}
         </VerticalTimeline>
     );
