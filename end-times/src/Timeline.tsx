@@ -85,10 +85,10 @@ export const TimeLine = ({ data }: { data: NewsResult[] }) => {
                                             </div>
 
                                             {monthExpanded.includes(k + j) &&
-                                                groupedData[k][j].map(({ title, ...rest }) => (
+                                                groupedData[k][j].map(({ title, ...rest }, i) => (
                                                     <TimelineElement
                                                         {...{ title, ...rest }}
-                                                        key={title}
+                                                        key={title + i}
                                                     />
                                                 ))}
                                         </div>

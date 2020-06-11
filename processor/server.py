@@ -192,18 +192,42 @@ def get_features(doc):
 ''' END NLP'''
 
 
-def get_is_valid_article(title, text, ind):
-    # TODO: predict from classifier
-    return True if ind != 2 else False
+def is_term_in_title(title_doc, term_doc):
+    for sent in title_doc.sentences:
+        for word in sent.words:
+            for term_word in term_doc.sentences[0].words:
+                is_in = term_word.lemma.lower() == word.lemma.lower()
+                if is_in:
+                    return True
+    return False
 
 
-def predict_is_event(sent, clf):
-    doc = nlp(sent)
-    features = get_features(doc)
-    return clf.predict(features)[0]
+def predict_is_event(title, snippet, term, clf):
+    title_doc = nlp(title)
+    if snippet:
+        snippet_doc = nlp(snippet)
+    term_doc = nlp(term)
+
+    is_term_in = is_term_in_title(title_doc, term_doc)
+    if snippet:
+        is_term_in = is_term_in or is_term_in_title(snippet_doc, term_doc)
+    if not is_term_in:
+        return False
+    title_features = get_features(title_doc)
+    is_title_ev = clf.predict(title_features)[0]
+    if snippet:
+        snippet_features = get_features(snippet_doc)
+        is_snippet_ev = clf.predict(snippet_features)[0]
+
+    is_ev = is_title_ev
+
+    if snippet:
+        is_ev = is_title_ev or is_snippet_ev
+
+    return is_ev
 
 
-def get_data():
+def get_demo_data():
     with open(demo_data_file) as f:
         demo_data = json.load(f)
         return demo_data
@@ -211,20 +235,37 @@ def get_data():
 
 # TODO: pass time_period and num from FE
 def get_search_results(term):
-    params = {
-        "q": term,
-        "search_type": "news",
-        "show_duplicates": "false",
-        "time_period": "last_week",
-        "sort_by": "date",
-        "hl": "uk",
-        "gl": "ua",
-        "num": "100"
-    }
+    results = []
+    is_end = False
+    for i in range(1, 17, 2):
+        if is_end:
+            return results
+        print(f'Querying page {i} ...')
+        params = {
+            "q": term,
+            "search_type": "news",
+            # "show_duplicates": "false",
+            "time_period": "last_year",
+            "sort_by": "relevance",
+            "hl": "uk",
+            "gl": "ua",
+            "num": "20",
+            "page": str(i),
+        }
 
-    result = serpwow.get_json(params)
+        result = serpwow.get_json(params)
+        if result.get('news_results'):
+            for news in result['news_results']:
+                results.append(news)
+            print(f'Queried page {i}')
+        else:
+            print(f'Looks like no results at page {i}')
+            is_end = True
 
-    return result
+    return results
+
+
+cache = {}
 
 
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
@@ -243,21 +284,44 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             input_data = body_params.get('inputData')
             search_term = input_data.get('term')
             if search_term:
-                search_data = get_search_results(search_term)
+                search_term = search_term.strip()
+                search_results = get_search_results(search_term)
+                # search_data = get_demo_data()
 
-                for i, article in enumerate(search_data['news_results']):
-                    if article['title'].endswith(' ...'):
+                num_res = len(search_results)
+                for i, article in enumerate(search_results):
+                    title = None
+                    article_title = article['title']
+                    article_snippet = article.get('snippet')
+                    if article_title.endswith(' ...'):
                         link = article['link']
-                        html = requests.get(link).text
-                        soup = BeautifulSoup(html)
-                        title = soup.title.string
+                        if cache.get(link):
+                            title = cache[link]
+                        else:
+                            try:
+                                r = requests.get(link, timeout=(1, 2))
+                                if r.encoding != 'CP1251' and r.encoding != 'windows-1251':
+                                    r.encoding = 'utf-8'
+                                html = r.text
+                                soup = BeautifulSoup(html)
+                                h1 = soup.find('h1')
+                                if h1:
+                                    title = h1.string
+                                else:
+                                    title = soup.title.string
+                                if title:
+                                    cache[link] = title
+                            except Exception as e:
+                                print(e)
+                                print(link)
                     else:
-                        title = article['title']
-
-                    is_event = predict_is_event(title, clf)
-
-                    if is_event:
-                        resp_data.append(article)
+                        title = article_title
+                    if title:
+                        is_event = predict_is_event(
+                            title.strip(), article_snippet, search_term, clf)
+                        if is_event:
+                            resp_data.append(article)
+                    print(f'Processed {i} from {num_res}')
 
             response.write(json.dumps(
                 resp_data, ensure_ascii=False).encode('utf-8'))
