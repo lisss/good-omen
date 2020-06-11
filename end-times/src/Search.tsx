@@ -18,9 +18,14 @@ const searchArticles = (
             inputData: inputData,
         }),
     })
+        .then((res) => {
+            if (res.status !== 200) {
+                onError();
+            }
+            return res;
+        })
         .then((res) => res.json() as Promise<NewsResult[]>)
         .then((res) => {
-            console.log(res);
             const timelineData = res.map((x) => {
                 return {
                     ...x,
@@ -30,7 +35,6 @@ const searchArticles = (
 
             onComplete(timelineData);
         })
-        // TODO: fall to error state
         .catch(onError);
 };
 
@@ -56,7 +60,11 @@ export const Search = ({
                 placeholder="Введіть, шо вам там треба..."
                 onChange={(e) => setSearchTerm(e.currentTarget.value)}
             />
-            <button className="search-btn" onClick={() => onSearch(searhTerm)}>
+            <button
+                className="search-btn"
+                onClick={() => onSearch(searhTerm)}
+                disabled={!searhTerm}
+            >
                 Вйо до новин!
             </button>
         </div>

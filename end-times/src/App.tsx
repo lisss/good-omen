@@ -10,11 +10,18 @@ import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
 function App() {
     const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(false);
     const [timelinedata, setTimeLineData] = useState<NewsResult[] | null>(null);
 
     const onSearchComplete = (data: NewsResult[]) => {
         setLoading(false);
         setTimeLineData(data);
+    };
+
+    const onSearchError = () => {
+        setLoading(false);
+        setTimeLineData(null);
+        setError(true);
     };
 
     return (
@@ -28,9 +35,15 @@ function App() {
                     <Search
                         onSearchStart={() => setLoading(true)}
                         onSearchComplete={onSearchComplete}
-                        onSearchError={() => setTimeLineData(null)}
+                        onSearchError={onSearchError}
                     />
-                    {timelinedata ? <TimeLine data={timelinedata} /> : <Empty />}
+                    {timelinedata ? (
+                        <TimeLine data={timelinedata} />
+                    ) : error ? (
+                        <NotFound />
+                    ) : (
+                        <Empty />
+                    )}
                 </>
             )}
         </div>

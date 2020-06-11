@@ -17,3 +17,18 @@ a {
 a:hover {
     font-weight: 700;
 }
+
+.timeline-year {
+}
+
+.timeline-month {
+    margin-left: 32px;
+}
+.timeline-year:hover,
+.timeline-month:hover {
+    cursor: pointer;
+}
+
+.timeline-article {
+    margin-left: 64px;
+}
