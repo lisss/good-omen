@@ -18,7 +18,67 @@ a:hover {
     font-weight: 700;
 }
 
-.timeline-year {
+.timeline-year > div > .vertical-timeline-element-content {
+    position: relative;
+    margin-left: 60px;
+    width: auto;
+    padding: 1.5em;
+}
+
+.timeline-month > div > .vertical-timeline-element-content {
+    position: relative;
+    margin-left: 60px;
+    width: auto;
+    padding: 1.5em;
+}
+
+.timeline-article > div > .vertical-timeline-element-content {
+    padding-top: 0;
+}
+
+.timeline-year > div > div > .vertical-timeline-element-date {
+    float: left;
+    padding: 0.8em 0;
+    opacity: 0.7;
+    left: 0 !important;
+}
+
+.timeline-month > div > div > .vertical-timeline-element-date {
+    float: left;
+    padding: 0.8em 0;
+    opacity: 0.7;
+    left: 0 !important;
+}
+
+.timeline-year > div > .vertical-timeline-element-icon {
+    left: 0;
+    width: 40px;
+    height: 40px;
+    margin-left: 0;
+}
+
+.timeline-month > div > .vertical-timeline-element-icon {
+    left: 0;
+    width: 40px;
+    height: 40px;
+    margin-left: 0;
+}
+
+@media screen and (min-width: 1170px) {
+    .timeline-year > div > .vertical-timeline-element-content {
+        padding: 2em;
+    }
+
+    .timeline-month > div > .vertical-timeline-element-content {
+        padding: 2em;
+    }
+
+    .timeline-year > div > div > .vertical-timeline-element-date {
+        padding: 1.2em 0;
+    }
+    .timeline-month > div > div > .vertical-timeline-element-date {
+        padding: 1.2em 0;
+    }
 }
 
 .timeline-month {

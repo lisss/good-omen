@@ -55,7 +55,7 @@ export const TimeLine = ({ data }: { data: NewsResult[] }) => {
                                 date={k + ' н.е.'}
                                 iconStyle={{
                                     backgroundImage: `url(${yearIcon})`,
-                                    top: '14px',
+                                    top: '24px',
                                 }}
                             ></VerticalTimelineElement>
                         </div>
@@ -79,7 +79,7 @@ export const TimeLine = ({ data }: { data: NewsResult[] }) => {
                                                     date={j}
                                                     iconStyle={{
                                                         backgroundImage: `url(${monthIcon})`,
-                                                        top: '14px',
+                                                        top: '24px',
                                                     }}
                                                 ></VerticalTimelineElement>
                                             </div>
