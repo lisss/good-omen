@@ -68,6 +68,18 @@ def get_doc_core_members(doc):
     adv_final = ['вперше', 'нарешті', 'врешті',
                  'вчора', 'сьогодні', 'позавчора']
 
+    def get_token_children(token, tree):
+        return [x for x in tree if x.head == int(token.id)]
+
+    def get_root_ccomp_verb(root_id, tree):
+        for word in tree.words:
+            if word.deprel == 'ccomp' and word.head == root.id:
+                if word.upos == 'VERB':
+                    return word
+                for child in get_token_children(word, tree.words):
+                    if child.upos == 'VERB':
+                        return child
+
     for sent in doc.sentences:
         spo = {}
         pred = None
@@ -81,7 +93,6 @@ def get_doc_core_members(doc):
                     None)
         if not doc.text.strip() or num_words == 2 and sent.words[num_words - 1].upos == 'PUNCT':
             continue
-
         # FIXME: iterate only once
         if root:
             root_conj = next((word for word in sent.words if word.deprel ==
@@ -105,6 +116,7 @@ def get_doc_core_members(doc):
                                   None)
             root_xcomp = next((word for word in sent.words if word.deprel ==
                                'xcomp' and word.head == int(root.id)), None)
+            root_ccomp = get_root_ccomp_verb(int(root.id), sent)
             root_xcomp_noun = next((word for word in sent.words if word.deprel == 'xcomp:sp'
                                     and word.upos == 'NOUN'
                                     and word.head == int(root.id)),
@@ -118,6 +130,7 @@ def get_doc_core_members(doc):
             spo['c_conj'] = c_conj
             spo['root_adv_final'] = root_adv_final
             spo['root_xcomp'] = root_xcomp
+            spo['root_ccomp'] = root_ccomp
             spo['root_xcomp_noun'] = root_xcomp_noun
             if subj:
                 subj_conj = next((word for word in sent.words if word.deprel ==
@@ -131,7 +144,7 @@ def get_doc_core_members(doc):
                                           None)
                     spo['subj-conj-verb'] = subj_conj_verb
 
-        res.append((sent.text, spo))
+        res.append((sent.text, spo, num_words))
     return res
 
 
@@ -140,17 +153,18 @@ def get_features(doc):
 
     predicate_special = ['допустити', 'думати', 'припустити', 'відреагувати', 'пояснити',
                          'сказати', 'заявити', 'повідомити', 'повідомляти', 'розповісти',
-                         'розповідати', 'рекомендувати', 'порекомендувати', 'мати',
-                         'стати', 'почати']
+                         'розповідати', 'рекомендувати', 'порекомендувати', 'мати', 'стати',
+                         'почати']
 
     spos = get_doc_core_members(doc)
-    for sent_text, spo in spos:
+    for sent_text, spo, num_words in spos:
         feat = {}
         if spo:
             root = spo['root']
             root_conj = spo.get('root-conj')
             root_adv_final = spo.get('root_adv_final')
             root_xcomp = spo.get('root_xcomp')
+            root_ccomp = spo.get('root_ccomp')
             root_xcomp_noun = spo.get('root_xcomp_noun')
             subj = spo.get('subj')
             subj_conj = spo.get('subj-conj')
@@ -163,21 +177,40 @@ def get_features(doc):
             else:
                 pred_features = {}
 
+            pos_shape = root.upos
+            if subj:
+                pos_shape += f'_{subj.upos}'
+            if obj:
+                pos_shape += f'_{obj.upos}'
+
+            feat['num-words'] = num_words < 13
+            feat['pos-shape'] = pos_shape
             feat['subj'] = 'SUBJ' if subj else 'NONE'
             feat['has-date'] = len(dates) > 0
+
             if pred_features.get('Tense') == 'Past':
                 feat['root_xcomp'] = root_xcomp is not None
                 if root_xcomp:
                     feat['root_xcomp_pos'] = root_xcomp.upos
+                if root_ccomp:
+                    root_ccomp_features = parse_features(root_ccomp.feats)
+                    feat['root_ccomp_tense'] = root_ccomp_features.get(
+                        'Tense') or 'NONE'
+                    feat['root_ccomp_aspect'] = root_ccomp_features.get(
+                        'Aspect') or 'NONE'
+                    if root_ccomp_features.get('Tense') != 'Past':
+                        feat['pred-special'] = root.lemma in predicate_special
 
             if subj:
+                subj_features = parse_features(subj.feats)
+                feat['subj-animacy'] = subj_features.get('Animacy') or 'NONE'
                 feat['subj-pos'] = subj.upos
+            else:
+                feat['subj-animacy'] = 'NONE'
+                feat['subj-pos'] = 'NONE'
 
-            feat['pred'] = root.lemma
-            feat['pred-pos'] = root.upos
             feat['obj'] = 'OBJ' if obj else 'NONE'
-            if obj:
-                feat['obj-pos'] = obj.upos
+
             if root.upos == 'VERB':
                 feat['pred-tense'] = pred_features.get('Tense') or 'NONE'
                 feat['pred-aspect'] = pred_features.get('Aspect') or 'NONE'
