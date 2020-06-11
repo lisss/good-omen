@@ -45,6 +45,12 @@ weighted avg       0.74      0.73      0.73      1022
 Ось приклад, як виглядає документ із анотацією:
 ![d](./images/tagtog.png)
 
-3. Для пошуку новин - гугл сьорч апішка від [SerpWow](https://serpwow.com/)
-4. Бекенд - простенький HTTP сервачок на `python`
-5. Фронтенд - юайка на `TypeScript`, `React`, для візуалізації таймлайну - [react-vertical-timeline](https://github.com/stephane-monnot/react-vertical-timeline)
+3. NLP - [stanza](https://stanfordnlp.github.io/stanza/index.html)
+4. Для пошуку новин - гугл сьорч апішка від [SerpWow](https://serpwow.com/)
+5. Бекенд - простенький HTTP сервачок на `python`
+6. Фронтенд - юайка на `TypeScript`, `React`, для візуалізації таймлайну - [react-vertical-timeline](https://github.com/stephane-monnot/react-vertical-timeline)
+
+## Основні складнощі
+
+1. Анотування - процес дуже повільний, тому потребує багато ресурсу. Плюс не так легко часом визначити, чи є новина подією, чи не ні
+2. Пошук фіч для класифікатора (розбір дерева залежностей, пошук патернів, притаманних подіям/не подіям тощо)
