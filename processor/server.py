@@ -266,8 +266,7 @@ def get_demo_data():
         return demo_data
 
 
-# TODO: pass time_period and num from FE
-def get_search_results(term):
+def get_search_results(term, time_period, num_per_page):
     results = []
     is_end = False
     for i in range(1, 17, 2):
@@ -278,11 +277,11 @@ def get_search_results(term):
             "q": term,
             "search_type": "news",
             # "show_duplicates": "false",
-            "time_period": "last_year",
+            "time_period": time_period,
             "sort_by": "relevance",
             "hl": "uk",
             "gl": "ua",
-            "num": "20",
+            "num": num_per_page,
             "page": str(i),
         }
 
@@ -316,9 +315,15 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             body_params = json.loads(body)
             input_data = body_params.get('inputData')
             search_term = input_data.get('term')
+            time_period = input_data.get('period')
+            num_per_page = input_data.get('numPerPage')
             if search_term:
+                time_period = time_period or 'last_year'
+                num_per_page = num_per_page or "20"
+                print(time_period, num_per_page)
                 search_term = search_term.strip()
-                search_results = get_search_results(search_term)
+                search_results = get_search_results(
+                    search_term, time_period, num_per_page)
                 # search_data = get_demo_data()
 
                 num_res = len(search_results)

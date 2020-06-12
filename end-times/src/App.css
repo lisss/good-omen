@@ -64,18 +64,37 @@
 }
 
 .search-input,
-.focus-visible {
+.focus-visible,
+.select-period,
+.select-num {
     padding: 12px 14px;
-    margin-right: 8px;
-    flex: 1;
+    margin-right: 12px;
     border: 1px solid rgba(33, 150, 243, 0.48);
     border-radius: 4px;
     font-size: 16px;
     outline: none;
 }
 
+.search-input {
+    flex: 1;
+}
+
+select {
+    appearance: none;
+}
+
+.select-period {
+    padding: 14px;
+    display: flex;
+    cursor: pointer;
+}
+.select-num {
+    width: 48px;
+}
+
 @media screen and (max-width: 781px) {
-    .search-input {
+    .search-input,
+    .select-period {
         margin: 0 0 12px;
     }
 }
