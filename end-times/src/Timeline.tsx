@@ -21,7 +21,7 @@ const TimelineElement = ({ link, date, title, thumbnail }: NewsResult) => {
                 {expanded && (
                     <div className="timeline-details">
                         <a href={link} target="_blank">
-                            вйо до новини!
+                            вйо до подій!
                         </a>
                     </div>
                 )}

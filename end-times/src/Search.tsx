@@ -109,7 +109,7 @@ export const Search = ({
                 }
                 disabled={!searhTerm}
             >
-                Вйо до новин!
+                Вйо до подій!
             </button>
         </div>
     );

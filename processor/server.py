@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 from serpwow.google_search_results import GoogleSearchResults
 import stanza
 from joblib import load
+import langdetect
 
 
 absDir = os.path.dirname(os.path.abspath(__file__))
@@ -71,6 +72,20 @@ def get_doc_core_members(doc):
     def get_token_children(token, tree):
         return [x for x in tree if x.head == int(token.id)]
 
+    def get_token_window(token_id, tokens):
+        lefts, rights = [], []
+        if token_id > 3:
+            lefts.append(tokens[token_id - 4])
+        if token_id > 2:
+            lefts.append(tokens[token_id - 3])
+        if token_id > 1:
+            lefts.append(tokens[token_id - 2])
+        neigb_right = token_id + 1
+        while neigb_right < len(tokens) - token_id:
+            rights.append(tokens[neigb_right])
+            neigb_right += 1
+        return lefts, rights
+
     def get_root_ccomp_verb(root_id, tree):
         for word in tree.words:
             if word.deprel == 'ccomp' and word.head == root.id:
@@ -91,7 +106,8 @@ def get_doc_core_members(doc):
         root = next((word
                      for word in sent.words if word.deprel == 'root'),
                     None)
-        if not doc.text.strip() or num_words == 2 and sent.words[num_words - 1].upos == 'PUNCT':
+        if not doc.text.strip() or num_words == 2 and sent.words[num_words - 1].upos == 'PUNCT' \
+                or root.upos == 'SYM':
             continue
         # FIXME: iterate only once
         if root:
@@ -112,7 +128,7 @@ def get_doc_core_members(doc):
             root_adv_final = next((word for word in sent.words if word.deprel ==
                                    'advmod' and word.upos == 'ADV' and word.head == int(
                                        root.id)
-                                   and word.lemma in adv_final),
+                                   and word.lemma.lower() in adv_final),
                                   None)
             root_xcomp = next((word for word in sent.words if word.deprel ==
                                'xcomp' and word.head == int(root.id)), None)
@@ -121,6 +137,7 @@ def get_doc_core_members(doc):
                                     and word.upos == 'NOUN'
                                     and word.head == int(root.id)),
                                    None)
+            root_window = get_token_window(int(root.id), sent.words)
 
             spo['subj'] = subj
             spo['root'] = root
@@ -132,6 +149,8 @@ def get_doc_core_members(doc):
             spo['root_xcomp'] = root_xcomp
             spo['root_ccomp'] = root_ccomp
             spo['root_xcomp_noun'] = root_xcomp_noun
+            spo['root_window'] = root_window
+            spo['all_verbs'] = [x for x in sent.words if x.upos == 'VERB']
             if subj:
                 subj_conj = next((word for word in sent.words if word.deprel ==
                                   'conj' and (
@@ -144,6 +163,12 @@ def get_doc_core_members(doc):
                                           None)
                     spo['subj-conj-verb'] = subj_conj_verb
 
+                subj_window = get_token_window(int(subj.id), sent.words)
+                spo['subj_window'] = subj_window
+            if obj:
+                obj_window = get_token_window(int(obj.id), sent.words)
+                spo['obj_window'] = obj_window
+
         res.append((sent.text, spo, num_words))
     return res
 
@@ -154,7 +179,16 @@ def get_features(doc):
     predicate_special = ['допустити', 'думати', 'припустити', 'відреагувати', 'пояснити',
                          'сказати', 'заявити', 'повідомити', 'повідомляти', 'розповісти',
                          'розповідати', 'рекомендувати', 'порекомендувати', 'мати', 'стати',
-                         'почати']
+                         'почати',
+                         'назвати']
+
+    def _get_verbs_past(verbs):
+        past = 0
+        for verb in verbs:
+            feats = parse_features(verb.feats)
+            if feats.get('Tense') == 'Past':
+                past += 1
+        return past
 
     spos = get_doc_core_members(doc)
     for sent_text, spo, num_words in spos:
@@ -166,9 +200,13 @@ def get_features(doc):
             root_xcomp = spo.get('root_xcomp')
             root_ccomp = spo.get('root_ccomp')
             root_xcomp_noun = spo.get('root_xcomp_noun')
+            root_lefts, root_rights = spo['root_window']
             subj = spo.get('subj')
             subj_conj = spo.get('subj-conj')
+            subj_window = spo.get('subj_window')
+            obj_window = spo.get('obj_window')
             obj = spo.get('obj')
+            all_verbs = spo['all_verbs']
 
             dates = find_dates(doc.text, True)
 
@@ -183,10 +221,56 @@ def get_features(doc):
             if obj:
                 pos_shape += f'_{obj.upos}'
 
-            feat['num-words'] = num_words < 13
             feat['pos-shape'] = pos_shape
             feat['subj'] = 'SUBJ' if subj else 'NONE'
             feat['has-date'] = len(dates) > 0
+
+            if len(root_lefts) - 1 > 0:
+                feat['root-w-1'] = root_lefts[len(root_lefts) - 1].upos
+            if len(root_lefts) - 2 > 0:
+                feat['root-w-2'] = root_lefts[len(root_lefts) - 2].upos
+            if len(root_lefts) - 3 > 0:
+                feat['root-w-3'] = root_lefts[len(root_lefts) - 3].upos
+            if len(root_rights) - 1 > 0:
+                feat['root-w+1'] = root_rights[len(root_rights) - 1].upos
+            if len(root_rights) - 2 > 0:
+                feat['root-w+2'] = root_rights[len(root_rights) - 2].upos
+            if len(root_rights) - 3 > 0:
+                feat['root-w+3'] = root_rights[len(root_rights) - 3].upos
+
+            if subj_window:
+                subj_lefts, subj_rights = subj_window
+
+                if len(subj_lefts) - 1 > 0:
+                    feat['subj-w-1'] = subj_lefts[len(subj_lefts) - 1].upos
+                if len(subj_lefts) - 2 > 0:
+                    feat['subj-w-2'] = subj_lefts[len(subj_lefts) - 2].upos
+                if len(subj_lefts) - 3 > 0:
+                    feat['subj-w-3'] = subj_lefts[len(subj_lefts) - 3].upos
+                if len(subj_rights) - 1 > 0:
+                    feat['subj-w+1'] = subj_rights[len(subj_rights) - 1].upos
+                if len(subj_rights) - 2 > 0:
+                    feat['subj-w+2'] = subj_rights[len(subj_rights) - 2].upos
+                if len(subj_rights) - 3 > 0:
+                    feat['subj-w+3'] = subj_rights[len(subj_rights) - 3].upos
+
+            if obj_window:
+                obj_lefts, obj_rights = obj_window
+
+                if len(obj_lefts) - 1 > 0:
+                    feat['obj-w-1'] = obj_lefts[len(obj_lefts) - 1].upos
+                if len(obj_lefts) - 2 > 0:
+                    feat['obj-w-2'] = obj_lefts[len(obj_lefts) - 2].upos
+                if len(obj_lefts) - 3 > 0:
+                    feat['obj-w-3'] = obj_lefts[len(obj_lefts) - 3].upos
+                if len(obj_rights) - 1 > 0:
+                    feat['obj-w+1'] = obj_rights[len(obj_rights) - 1].upos
+                if len(obj_rights) - 2 > 0:
+                    feat['obj-w+2'] = obj_rights[len(obj_rights) - 2].upos
+                if len(obj_rights) - 3 > 0:
+                    feat['obj-w+3'] = obj_rights[len(obj_rights) - 3].upos
+
+            feat['is_question'] = sent_text.endswith('?')
 
             if pred_features.get('Tense') == 'Past':
                 feat['root_xcomp'] = root_xcomp is not None
@@ -199,7 +283,13 @@ def get_features(doc):
                     feat['root_ccomp_aspect'] = root_ccomp_features.get(
                         'Aspect') or 'NONE'
                     if root_ccomp_features.get('Tense') != 'Past':
-                        feat['pred-special'] = root.lemma in predicate_special
+                        feat['pred-special'] = root.lemma.lower() in predicate_special
+            if root_conj:
+                feat['root_conj_special'] = root_conj.lemma.lower(
+                ) in predicate_special
+
+            feat['all_verb_past'] = _get_verbs_past(
+                all_verbs) == len(all_verbs)
 
             if subj:
                 subj_features = parse_features(subj.feats)
@@ -225,20 +315,73 @@ def get_features(doc):
 ''' END NLP'''
 
 
+def is_contain_string(string, sub):
+    overlap_len = int(len(string) * 0.8)
+    if len(sub) < overlap_len:
+        return False
+    return string.find(sub) == 0
+
+
 def is_term_in_title(title_doc, term_doc):
     for sent in title_doc.sentences:
         for word in sent.words:
             for term_word in term_doc.sentences[0].words:
-                is_in = term_word.lemma.lower() == word.lemma.lower()
+                term = term_word.lemma.lower()
+                w = word.lemma.lower()
+                is_in = term == w or is_contain_string(
+                    w, term) or is_contain_string(term, w)
                 if is_in:
                     return True
     return False
 
 
+def is_root_in_past(doc):
+    past = 0
+    for sent in doc.sentences:
+        root = next(
+            (word for word in sent.words if word.deprel == 'root'), None)
+        root_feats = parse_features(root.feats)
+        if root_feats.get('Tense') == 'Past':
+            past += 1
+    return past == len(doc.sentences)
+
+
+def trim_cropped(text):
+    trimmed = re.sub('\\.\\s(?!.*\\.\\s).*', '', text)
+    return trimmed if not trimmed.endswith(' ...') else None
+
+
+def trim_indirect_speech(text):
+    stops = ['Курс НБУ: ']
+
+    text_trimmed = text
+
+    if ', -' in text_trimmed:
+        text_trimmed = re.sub('(\"|»)?\,\s-\s.*', '', text_trimmed)
+    text_trimmed = re.sub(
+        '(^\w+(-\w+)?((\s+\w+(-\w+)?){1})?):\s', '', text_trimmed)
+    for stop in stops:
+        text_trimmed = text_trimmed.replace(stop, '')
+    return text_trimmed
+
+
 def predict_is_event(title, snippet, term, clf):
+    title = trim_indirect_speech(title)
+    if snippet:
+        snippet = trim_indirect_speech(snippet)
+    title_lang = langdetect.detect(title)
+    snippet_lang = langdetect.detect(snippet) if snippet else title_lang
+
+    if title_lang != 'uk' and snippet_lang != 'uk':
+        return False
     title_doc = nlp(title)
+    is_root_past = is_root_in_past(title_doc)
     if snippet:
         snippet_doc = nlp(snippet)
+        if is_root_past:
+            is_root_past = is_root_in_past(title_doc)
+    if not is_root_past:
+        return False
     term_doc = nlp(term)
 
     is_term_in = is_term_in_title(title_doc, term_doc)
@@ -269,7 +412,7 @@ def get_demo_data():
 def get_search_results(term, time_period, num_per_page):
     results = []
     is_end = False
-    for i in range(1, 17, 2):
+    for i in range(1, 15, 3):
         if is_end:
             return results
         print(f'Querying page {i} ...')
@@ -331,6 +474,8 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
                     title = None
                     article_title = article['title']
                     article_snippet = article.get('snippet')
+                    if article_snippet:
+                        article_snippet = trim_cropped(article_snippet)
                     if article_title.endswith(' ...'):
                         link = article['link']
                         if cache.get(link):
@@ -355,10 +500,13 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
                     else:
                         title = article_title
                     if title:
-                        is_event = predict_is_event(
-                            title.strip(), article_snippet, search_term, clf)
-                        if is_event:
-                            resp_data.append(article)
+                        try:
+                            is_event = predict_is_event(
+                                title.strip(), article_snippet, search_term, clf)
+                            if is_event:
+                                resp_data.append(article)
+                        except Exception as e:
+                            print(f'Failed to check is event: {e}')
                     print(f'Processed {i} from {num_res}')
 
             response.write(json.dumps(
