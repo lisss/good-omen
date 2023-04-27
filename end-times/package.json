@@ -15,7 +15,7 @@
         "react-loader-spinner": "3.1.14",
         "react-scripts": "3.4.1",
         "react-vertical-timeline-component": "2.6.0",
-        "typed-rest-client": "1.7.3",
+        "typed-rest-client": "1.8.0",
         "typescript": "~3.7.2"
     },
     "scripts": {
